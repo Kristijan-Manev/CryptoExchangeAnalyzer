@@ -3744,3 +3744,156 @@
 2025-11-20 16:34:28,958 - filters.data_fill_filter - INFO - Data fill completed: 839 successful
 2025-11-20 16:34:28,960 - __main__ - INFO -  FILTER 3 COMPLETED: 839 successful downloads
 2025-11-20 16:34:28,966 - utils.timer - INFO - Complete Crypto Exchange Data Pipeline completed in 5928.21 seconds
+2025-11-27 17:30:08,778 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.29:5000
+2025-11-27 17:30:08,779 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 17:30:08,784 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:30:09,310 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:30:09,312 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:30:14,916 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:30:14] "GET / HTTP/1.1" 200 -
+2025-11-27 17:30:14,982 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:30:14] "GET /status HTTP/1.1" 200 -
+2025-11-27 17:30:15,174 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:30:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-11-27 17:30:28,672 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:30:28] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:30:34,705 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:30:34] "GET /crypto/ethereum-classic HTTP/1.1" 200 -
+2025-11-27 17:30:59,247 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:30:59] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:31:03,600 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:31:03] "GET /crypto/unit-bitcoin HTTP/1.1" 200 -
+2025-11-27 17:32:00,308 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:32:00] "GET /crypto/bitcoin-cash HTTP/1.1" 200 -
+2025-11-27 17:32:05,252 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:32:05] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:32:16,016 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:32:16] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:32:19,907 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:32:19] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:32:21,914 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:32:21] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:32:26,619 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:32:26] "GET /crypto/ethereum-classic HTTP/1.1" 200 -
+2025-11-27 17:33:13,330 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:33:13] "GET /crypto/connect-token-wct HTTP/1.1" 200 -
+2025-11-27 17:33:15,044 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:33:15] "GET /crypto/ethereum-classic HTTP/1.1" 200 -
+2025-11-27 17:33:26,035 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:33:26] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:33:27,658 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:33:27] "GET /crypto/lombard-staked-btc HTTP/1.1" 200 -
+2025-11-27 17:36:31,883 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:36:31,883 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:36:31,884 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:36:32,492 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:36:33,082 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:36:33,084 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:40:19,908 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.29:5000
+2025-11-27 17:40:19,909 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 17:40:19,914 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:40:20,450 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:40:20,452 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:40:23,892 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:40:23] "GET / HTTP/1.1" 200 -
+2025-11-27 17:41:41,614 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:41:41] "GET / HTTP/1.1" 200 -
+2025-11-27 17:44:06,879 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.29:5000
+2025-11-27 17:44:06,879 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-27 17:44:06,884 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:44:07,471 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:44:07,474 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:44:10,757 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:44:10] "GET / HTTP/1.1" 200 -
+2025-11-27 17:44:10,772 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:44:10] "GET /status HTTP/1.1" 200 -
+2025-11-27 17:44:16,411 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:44:16] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:44:17,805 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:44:17] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:44:17,830 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:44:17] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:44:21,310 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:44:21] "GET / HTTP/1.1" 200 -
+2025-11-27 17:44:21,630 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:44:21] "GET /status HTTP/1.1" 200 -
+2025-11-27 17:47:13,820 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:13] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:47:14,939 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:14] "GET /crypto/wrapped-bitcoin HTTP/1.1" 200 -
+2025-11-27 17:47:15,264 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:15] "GET /api/crypto/wrapped-bitcoin HTTP/1.1" 200 -
+2025-11-27 17:47:28,291 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:28] "GET /crypto/coinbase-wrapped-btc HTTP/1.1" 200 -
+2025-11-27 17:47:28,310 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:28] "GET /api/crypto/coinbase-wrapped-btc HTTP/1.1" 200 -
+2025-11-27 17:47:31,115 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:31] "GET /crypto/sbtc-2 HTTP/1.1" 200 -
+2025-11-27 17:47:31,437 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:31] "GET /api/crypto/sbtc-2 HTTP/1.1" 200 -
+2025-11-27 17:47:36,291 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:36] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:47:36,314 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:36] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:47:38,245 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:38] "GET /crypto/wrapped-bitcoin HTTP/1.1" 200 -
+2025-11-27 17:47:38,268 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:38] "GET /api/crypto/wrapped-bitcoin HTTP/1.1" 200 -
+2025-11-27 17:47:47,705 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:47] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:47:51,203 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:51] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:47:52,475 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:52] "GET /crypto/ethereum-classic HTTP/1.1" 200 -
+2025-11-27 17:47:52,794 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:47:52] "GET /api/crypto/ethereum-classic HTTP/1.1" 200 -
+2025-11-27 17:48:35,589 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:35] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:48:37,645 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:37] "GET /crypto/tron HTTP/1.1" 200 -
+2025-11-27 17:48:37,967 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:37] "GET /api/crypto/tron HTTP/1.1" 200 -
+2025-11-27 17:48:43,300 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:43] "GET /crypto/stronghold-token HTTP/1.1" 200 -
+2025-11-27 17:48:43,322 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:43] "GET /api/crypto/stronghold-token HTTP/1.1" 200 -
+2025-11-27 17:48:46,507 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:46] "GET /crypto/electroneum HTTP/1.1" 200 -
+2025-11-27 17:48:46,528 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:46] "GET /api/crypto/electroneum HTTP/1.1" 200 -
+2025-11-27 17:48:57,248 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:57] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:48:58,672 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:58] "GET /crypto/zcash HTTP/1.1" 200 -
+2025-11-27 17:48:58,697 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:48:58] "GET /api/crypto/zcash HTTP/1.1" 200 -
+2025-11-27 17:52:01,942 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\io\\parsers\\readers.py', reloading
+2025-11-27 17:52:01,963 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\util\\_decorators.py', reloading
+2025-11-27 17:52:02,580 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:52:03,124 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:52:03,127 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:52:08,780 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\__init__.py', reloading
+2025-11-27 17:52:08,781 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementTree.py', reloading
+2025-11-27 17:52:08,790 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementPath.py', reloading
+2025-11-27 17:52:09,291 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:52:09,851 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:52:09,853 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:52:45,291 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:52:45,291 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:52:46,240 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:52:46,802 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:52:46,804 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:53:40,983 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:53:40,984 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:53:41,404 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:53:42,001 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:53:42,003 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:54:09,245 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:54:09,245 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-11-27 17:54:10,341 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-27 17:54:10,964 - werkzeug - WARNING -  * Debugger is active!
+2025-11-27 17:54:10,965 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-27 17:54:12,942 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:12] "GET / HTTP/1.1" 200 -
+2025-11-27 17:54:12,953 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:12] "GET /status HTTP/1.1" 200 -
+2025-11-27 17:54:17,336 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:17] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:54:18,374 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:18] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:54:18,398 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:18] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:54:21,643 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:21] "GET / HTTP/1.1" 200 -
+2025-11-27 17:54:21,960 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:21] "GET /status HTTP/1.1" 200 -
+2025-11-27 17:54:25,353 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:25] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:54:26,332 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:26] "GET /crypto/tron HTTP/1.1" 200 -
+2025-11-27 17:54:26,658 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:54:26] "GET /api/crypto/tron HTTP/1.1" 200 -
+2025-11-27 17:55:31,591 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:55:31] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:55:36,454 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:55:36] "GET /crypto/staked-ether HTTP/1.1" 200 -
+2025-11-27 17:55:36,772 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:55:36] "GET /api/crypto/staked-ether HTTP/1.1" 200 -
+2025-11-27 17:57:51,675 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:57:51] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:57:53,971 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:57:53] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:57:54,287 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:57:54] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 17:58:00,929 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:00] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:58:02,851 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:02] "GET /crypto/tron HTTP/1.1" 200 -
+2025-11-27 17:58:03,179 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:03] "GET /api/crypto/tron HTTP/1.1" 200 -
+2025-11-27 17:58:05,049 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:05] "GET /crypto/stronghold-token HTTP/1.1" 200 -
+2025-11-27 17:58:05,069 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:05] "GET /api/crypto/stronghold-token HTTP/1.1" 200 -
+2025-11-27 17:58:07,361 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:07] "GET /crypto/electroneum HTTP/1.1" 200 -
+2025-11-27 17:58:07,672 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:07] "GET /api/crypto/electroneum HTTP/1.1" 200 -
+2025-11-27 17:58:17,335 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:17] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:58:18,297 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:18] "GET /crypto/usds HTTP/1.1" 200 -
+2025-11-27 17:58:18,613 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:18] "GET /api/crypto/usds HTTP/1.1" 200 -
+2025-11-27 17:58:29,359 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:29] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:58:30,474 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:30] "GET /crypto/weth HTTP/1.1" 200 -
+2025-11-27 17:58:30,790 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:30] "GET /api/crypto/weth HTTP/1.1" 200 -
+2025-11-27 17:58:34,537 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:34] "GET / HTTP/1.1" 200 -
+2025-11-27 17:58:34,554 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:34] "GET /status HTTP/1.1" 200 -
+2025-11-27 17:58:38,488 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:38] "POST /search HTTP/1.1" 200 -
+2025-11-27 17:58:39,718 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:39] "GET /crypto/zcash HTTP/1.1" 200 -
+2025-11-27 17:58:39,745 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 17:58:39] "GET /api/crypto/zcash HTTP/1.1" 200 -
+2025-11-27 18:06:08,828 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:08] "POST /search HTTP/1.1" 200 -
+2025-11-27 18:06:09,461 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:09] "GET /crypto/litecoin HTTP/1.1" 200 -
+2025-11-27 18:06:09,784 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:09] "GET /api/crypto/litecoin HTTP/1.1" 200 -
+2025-11-27 18:06:18,949 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:18] "GET / HTTP/1.1" 200 -
+2025-11-27 18:06:18,965 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:18] "GET /status HTTP/1.1" 200 -
+2025-11-27 18:06:21,302 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:21] "POST /search HTTP/1.1" 200 -
+2025-11-27 18:06:22,918 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:22] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 18:06:22,946 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:22] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-11-27 18:06:28,044 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:28] "GET / HTTP/1.1" 200 -
+2025-11-27 18:06:28,358 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:28] "GET /status HTTP/1.1" 200 -
+2025-11-27 18:06:33,437 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:33] "GET / HTTP/1.1" 200 -
+2025-11-27 18:06:33,452 - werkzeug - INFO - 127.0.0.1 - - [27/Nov/2025 18:06:33] "GET /status HTTP/1.1" 200 -
