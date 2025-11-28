@@ -247,7 +247,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🔍 Crypto Exchange Analyzer</h1>
+            <h1> Crypto Exchange Analyzer</h1>
             <p>Technical Prototype - Search Cryptocurrency Data</p>
         </div>
 
@@ -270,14 +270,14 @@
 
         <div class="results-section">
             <div id="loading" class="loading hidden">
-                ⏳ Searching cryptocurrency data...
+                 Searching cryptocurrency data...
             </div>
 
             <div id="error" class="error hidden"></div>
 
             <div id="resultsContainer">
                 <div class="no-results">
-                    🔍 Enter a cryptocurrency symbol or name above to search
+                     Enter a cryptocurrency symbol or name above to search
                 </div>
             </div>
         </div>
@@ -299,12 +299,12 @@
             const statsBar = document.getElementById('statsBar');
             if (data.data_loaded) {
                 statsBar.innerHTML = `
-                    📊 Available: ${data.symbols_count || 0} cryptocurrencies |
-                    📈 Historical Data: ${data.historical_files || 0} files |
-                    📋 Metrics: ${data.metrics_files || 0} files
+                     Available: ${data.symbols_count || 0} cryptocurrencies |
+                     Historical Data: ${data.historical_files || 0} files |
+                     Metrics: ${data.metrics_files || 0} files
                 `;
             } else {
-                statsBar.innerHTML = '⏳ Loading cryptocurrency data...';
+                statsBar.innerHTML = ' Loading cryptocurrency data...';
             }
         } catch (err) {
             console.error('Error loading stats:', err);
@@ -373,7 +373,7 @@
         if (!results || results.length === 0) {
             resultsContainer.innerHTML = `
                 <div class="no-results">
-                    ❌ No cryptocurrencies found matching your search
+                     No cryptocurrencies found matching your search
                 </div>
             `;
             return;
@@ -381,7 +381,7 @@
 
         let html = `
             <div style="text-align: center; margin-bottom: 20px; color: #2c3e50;">
-                <h2>📊 Found ${results.length} Cryptocurrency${results.length > 1 ? 's' : ''}</h2>
+                <h2> Found ${results.length} Cryptocurrency${results.length > 1 ? 's' : ''}</h2>
             </div>
             <div class="results-grid">
         `;

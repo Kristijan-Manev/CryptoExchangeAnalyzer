@@ -204,14 +204,14 @@ def load_initial_data():
             # Try to load existing data first
             symbols = processor.csv_manager.load_symbols()
             if symbols:
-                print(f"✓ Loaded {len(symbols)} existing cryptocurrencies")
+                print(f" Loaded {len(symbols)} existing cryptocurrencies")
                 data_loaded = True
                 return True
             else:
                 print("No existing data found. Running data collection pipeline...")
                 result = processor.run_pipe_and_filter()
                 if result['status'] == 'success':
-                    print(f"✓ Data collection completed: {result['success_count']} cryptocurrencies")
+                    print(f" Data collection completed: {result['success_count']} cryptocurrencies")
                     data_loaded = True
                     return True
                 else:
@@ -337,14 +337,14 @@ def status():
 def display_startup_banner():
     """Display startup information"""
     print("\n" + "=" * 70)
-    print("🚀 CRYPTO EXCHANGE ANALYZER - TECHNICAL PROTOTYPE")
+    print(" CRYPTO EXCHANGE ANALYZER - TECHNICAL PROTOTYPE")
     print("=" * 70)
-    print("📊 Web Interface for Cryptocurrency Data Search")
-    print("🔍 Features:")
+    print(" Web Interface for Cryptocurrency Data Search")
+    print(" Features:")
     print("   • Search cryptocurrencies by symbol, name, or ID")
     print("   • View historical data and metrics")
     print("   • Real-time search results")
-    print("🌐 Server will start at: http://localhost:5000")
+    print(" Server will start at: http://localhost:5000")
     print("=" * 70)
 
 
@@ -353,28 +353,28 @@ if __name__ == "__main__":
     display_startup_banner()
 
     # Load initial data
-    print("\n📥 Initializing data...")
+    print("\n Initializing data...")
     if load_initial_data():
-        print("✅ Data loaded successfully!")
+        print(" Data loaded successfully!")
 
         # Display data statistics
         symbols = processor.get_all_cryptocurrencies()
-        print(f"📈 Available cryptocurrencies: {len(symbols)}")
+        print(f" Available cryptocurrencies: {len(symbols)}")
 
         historical_files = len([f for f in os.listdir('data/historical') if f.endswith('.csv')]) if os.path.exists(
             'data/historical') else 0
         metrics_files = len([f for f in os.listdir('data/metrics') if f.endswith('.csv')]) if os.path.exists(
             'data/metrics') else 0
 
-        print(f"📊 Historical data files: {historical_files}")
-        print(f"📋 Metrics data files: {metrics_files}")
+        print(f" Historical data files: {historical_files}")
+        print(f" Metrics data files: {metrics_files}")
 
-        print("\n🎯 Ready to search! Open http://localhost:5000 in your browser")
+        print("\n Ready to search! Open http://localhost:5000 in your browser")
         print("   Try searching for: 'BTC', 'ETH', 'bitcoin', 'ethereum'")
         print("=" * 70)
 
         # Start the web server
         app.run(debug=True, host='0.0.0.0', port=5000)
     else:
-        print("❌ Failed to load data. Please check your configuration and try again.")
+        print(" Failed to load data. Please check your configuration and try again.")
         sys.exit(1)
