@@ -7413,3 +7413,1615 @@
 2025-11-28 15:02:09,664 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 15:02:09] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
 2025-11-28 15:02:17,650 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 15:02:17] "GET / HTTP/1.1" 200 -
 2025-11-28 15:02:17,970 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 15:02:17] "GET /status HTTP/1.1" 200 -
+2025-11-28 16:51:24,571 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.100.29:5000
+2025-11-28 16:51:24,571 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-11-28 16:51:24,581 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-11-28 16:51:25,647 - werkzeug - WARNING -  * Debugger is active!
+2025-11-28 16:51:25,652 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-11-28 16:51:27,208 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:51:27] "GET / HTTP/1.1" 200 -
+2025-11-28 16:51:27,240 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:51:27] "GET /status HTTP/1.1" 200 -
+2025-11-28 16:52:16,824 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:52:16] "POST /search HTTP/1.1" 200 -
+2025-11-28 16:52:19,232 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:52:19] "GET / HTTP/1.1" 200 -
+2025-11-28 16:52:19,264 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:52:19] "GET /status HTTP/1.1" 200 -
+2025-11-28 16:52:56,518 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:52:56] "POST /search HTTP/1.1" 200 -
+2025-11-28 16:52:59,270 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:52:59] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-11-28 16:52:59,322 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:52:59] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-11-28 16:53:04,059 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:04] "GET / HTTP/1.1" 200 -
+2025-11-28 16:53:04,379 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:04] "GET /status HTTP/1.1" 200 -
+2025-11-28 16:53:07,162 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:07] "POST /search HTTP/1.1" 200 -
+2025-11-28 16:53:08,211 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:08] "GET /crypto/ethereum HTTP/1.1" 200 -
+2025-11-28 16:53:08,546 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:08] "GET /api/crypto/ethereum HTTP/1.1" 200 -
+2025-11-28 16:53:12,296 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:12] "GET / HTTP/1.1" 200 -
+2025-11-28 16:53:12,321 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:12] "GET /status HTTP/1.1" 200 -
+2025-11-28 16:53:15,342 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:15] "POST /search HTTP/1.1" 200 -
+2025-11-28 16:53:16,838 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:16] "GET /crypto/dogecoin HTTP/1.1" 200 -
+2025-11-28 16:53:16,879 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:16] "GET /api/crypto/dogecoin HTTP/1.1" 200 -
+2025-11-28 16:53:20,891 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:20] "GET / HTTP/1.1" 200 -
+2025-11-28 16:53:21,202 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:21] "GET /status HTTP/1.1" 200 -
+2025-11-28 16:53:23,296 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:23] "POST /search HTTP/1.1" 200 -
+2025-11-28 16:53:24,273 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:24] "GET /crypto/zcash HTTP/1.1" 200 -
+2025-11-28 16:53:24,595 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:24] "GET /api/crypto/zcash HTTP/1.1" 200 -
+2025-11-28 16:53:28,446 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:28] "GET / HTTP/1.1" 200 -
+2025-11-28 16:53:28,525 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:53:28] "GET /status HTTP/1.1" 200 -
+2025-11-28 16:54:57,690 - werkzeug - INFO - 127.0.0.1 - - [28/Nov/2025 16:54:57] "POST /search HTTP/1.1" 200 -
+2025-12-02 17:46:16,935 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-02 17:46:16,935 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-02 17:46:16,942 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-02 17:46:17,516 - werkzeug - WARNING -  * Debugger is active!
+2025-12-02 17:46:17,519 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-02 17:46:24,037 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:24] "GET / HTTP/1.1" 200 -
+2025-12-02 17:46:24,052 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:24] "GET /status HTTP/1.1" 200 -
+2025-12-02 17:46:30,657 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:30] "POST /search HTTP/1.1" 200 -
+2025-12-02 17:46:33,398 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:33] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-02 17:46:33,423 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:33] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-02 17:46:38,326 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:38] "GET / HTTP/1.1" 200 -
+2025-12-02 17:46:38,642 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:38] "GET /status HTTP/1.1" 200 -
+2025-12-02 17:46:42,557 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:42] "POST /search HTTP/1.1" 200 -
+2025-12-02 17:46:43,935 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:43] "GET /crypto/ethereum HTTP/1.1" 200 -
+2025-12-02 17:46:44,264 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:44] "GET /api/crypto/ethereum HTTP/1.1" 200 -
+2025-12-02 17:46:49,032 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:49] "GET / HTTP/1.1" 200 -
+2025-12-02 17:46:49,049 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:46:49] "GET /status HTTP/1.1" 200 -
+2025-12-02 17:47:08,983 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:08] "POST /search HTTP/1.1" 200 -
+2025-12-02 17:47:10,343 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:10] "GET /crypto/dogecoin HTTP/1.1" 200 -
+2025-12-02 17:47:10,658 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:10] "GET /api/crypto/dogecoin HTTP/1.1" 200 -
+2025-12-02 17:47:20,277 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:20] "GET / HTTP/1.1" 200 -
+2025-12-02 17:47:20,294 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:20] "GET /status HTTP/1.1" 200 -
+2025-12-02 17:47:21,673 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:21] "POST /search HTTP/1.1" 200 -
+2025-12-02 17:47:23,338 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:23] "GET /crypto/cardano HTTP/1.1" 200 -
+2025-12-02 17:47:23,363 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:23] "GET /api/crypto/cardano HTTP/1.1" 200 -
+2025-12-02 17:47:40,143 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:47:40] "POST /search HTTP/1.1" 200 -
+2025-12-02 17:48:00,173 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:48:00] "POST /search HTTP/1.1" 200 -
+2025-12-02 17:48:01,725 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:48:01] "GET /crypto/tron HTTP/1.1" 200 -
+2025-12-02 17:48:02,043 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 17:48:02] "GET /api/crypto/tron HTTP/1.1" 200 -
+2025-12-02 19:14:49,432 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-02 19:14:49,433 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-02 19:14:49,448 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-02 19:14:50,500 - werkzeug - WARNING -  * Debugger is active!
+2025-12-02 19:14:50,503 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-02 19:15:10,677 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:10] "GET / HTTP/1.1" 200 -
+2025-12-02 19:15:10,722 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:10] "GET /status HTTP/1.1" 200 -
+2025-12-02 19:15:19,142 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:19] "POST /search HTTP/1.1" 200 -
+2025-12-02 19:15:21,009 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:21] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-02 19:15:21,065 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:21] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-02 19:15:25,403 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:25] "GET /crypto/solv-btc HTTP/1.1" 200 -
+2025-12-02 19:15:25,731 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:25] "GET /api/crypto/solv-btc HTTP/1.1" 200 -
+2025-12-02 19:15:32,625 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:32] "POST /search HTTP/1.1" 200 -
+2025-12-02 19:15:34,780 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:34] "POST /search HTTP/1.1" 200 -
+2025-12-02 19:15:36,314 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:36] "GET /crypto/ethereum HTTP/1.1" 200 -
+2025-12-02 19:15:36,374 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:36] "GET /api/crypto/ethereum HTTP/1.1" 200 -
+2025-12-02 19:15:46,560 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:46] "GET / HTTP/1.1" 200 -
+2025-12-02 19:15:46,880 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:46] "GET /status HTTP/1.1" 200 -
+2025-12-02 19:15:47,762 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:47] "POST /search HTTP/1.1" 200 -
+2025-12-02 19:15:48,858 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:48] "GET /crypto/dogecoin HTTP/1.1" 200 -
+2025-12-02 19:15:49,187 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:49] "GET /api/crypto/dogecoin HTTP/1.1" 200 -
+2025-12-02 19:15:52,823 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:52] "GET / HTTP/1.1" 200 -
+2025-12-02 19:15:52,885 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:15:52] "GET /status HTTP/1.1" 200 -
+2025-12-02 19:16:00,179 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:16:00] "POST /search HTTP/1.1" 200 -
+2025-12-02 19:16:02,022 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:16:02] "GET /crypto/tron HTTP/1.1" 200 -
+2025-12-02 19:16:02,354 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:16:02] "GET /api/crypto/tron HTTP/1.1" 200 -
+2025-12-02 19:16:05,096 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:16:05] "GET / HTTP/1.1" 200 -
+2025-12-02 19:16:05,130 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:16:05] "GET /status HTTP/1.1" 200 -
+2025-12-02 19:53:04,079 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-02 19:53:04,080 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-02 19:53:04,089 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-02 19:53:05,203 - werkzeug - WARNING -  * Debugger is active!
+2025-12-02 19:53:05,237 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-02 19:53:06,697 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:06] "GET / HTTP/1.1" 200 -
+2025-12-02 19:53:06,735 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:06] "GET /status HTTP/1.1" 200 -
+2025-12-02 19:53:24,542 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:24] "POST /search HTTP/1.1" 200 -
+2025-12-02 19:53:27,069 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:27] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-02 19:53:27,134 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:27] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-02 19:53:32,668 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:32] "GET / HTTP/1.1" 200 -
+2025-12-02 19:53:32,978 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:32] "GET /status HTTP/1.1" 200 -
+2025-12-02 19:53:35,220 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:35] "POST /search HTTP/1.1" 200 -
+2025-12-02 19:53:36,891 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:36] "GET /crypto/ethereum HTTP/1.1" 200 -
+2025-12-02 19:53:37,238 - werkzeug - INFO - 127.0.0.1 - - [02/Dec/2025 19:53:37] "GET /api/crypto/ethereum HTTP/1.1" 200 -
+2025-12-05 17:46:12,671 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 17:46:12,671 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 17:46:12,686 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 17:46:14,107 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 17:46:14,110 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 17:46:16,976 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:46:16] "GET / HTTP/1.1" 200 -
+2025-12-05 17:46:17,001 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:46:17] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:46:17,200 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:46:17] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:46:17,402 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:46:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-05 17:46:49,600 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:46:49] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:47:01,357 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:01] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:47:01,654 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:01] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:47:06,065 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:06] "GET / HTTP/1.1" 200 -
+2025-12-05 17:47:06,166 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:06] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:47:06,321 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:06] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:47:08,442 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:08] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:47:09,856 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:09] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:47:11,167 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:47:11,436 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:47:11,452 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:11] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:47:48,907 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:48] "GET / HTTP/1.1" 200 -
+2025-12-05 17:47:49,224 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:49] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:47:49,229 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:49] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:47:51,446 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:51] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:47:55,339 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:55] "GET /crypto/ethereum HTTP/1.1" 200 -
+2025-12-05 17:47:55,390 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:55] "GET /api/crypto/ethereum HTTP/1.1" 200 -
+2025-12-05 17:47:58,845 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:58] "GET / HTTP/1.1" 200 -
+2025-12-05 17:47:59,155 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:59] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:47:59,160 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:47:59] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:48:01,402 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:01] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:48:02,858 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:02] "GET /analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 17:48:03,476 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 17:48:03,755 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 17:48:03,785 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:03] "GET /api/analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 17:48:04,780 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:04] "GET / HTTP/1.1" 200 -
+2025-12-05 17:48:05,096 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:05] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:48:05,101 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:05] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:48:36,158 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\core\\dtypes\\missing.py', reloading
+2025-12-05 17:48:37,057 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 17:48:38,548 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 17:48:38,551 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 17:48:41,141 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 17:48:41,143 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 17:48:41,881 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 17:48:43,355 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 17:48:43,357 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 17:48:44,073 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:44] "GET / HTTP/1.1" 200 -
+2025-12-05 17:48:44,115 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:44] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:48:44,274 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:44] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:48:51,214 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:51] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:48:53,772 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:53] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:48:55,177 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:48:55,186 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 615, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:48:55,447 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:48:55,449 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 615, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:48:55,465 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:48:55] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:49:25,377 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 17:49:25,377 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 17:49:26,642 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 17:49:28,179 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 17:49:28,181 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 17:50:08,052 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 17:50:08,052 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 17:50:08,063 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 17:50:09,475 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 17:50:09,479 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 17:50:13,396 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:50:13] "GET / HTTP/1.1" 200 -
+2025-12-05 17:50:13,456 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:50:13] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:50:13,628 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:50:13] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:50:17,885 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:50:17] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:50:19,119 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:50:19] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:50:20,510 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:50:20,518 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 615, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:50:20,790 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:50:20,792 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 615, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:50:20,806 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:50:20] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:52:33,632 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:52:33] "GET / HTTP/1.1" 200 -
+2025-12-05 17:52:33,742 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:52:33] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:52:33,888 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:52:33] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:52:38,668 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:52:38] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:52:40,054 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:52:40] "GET /analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 17:52:40,660 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 17:52:40,662 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 615, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:52:40,970 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 17:52:40,972 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 615, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:52:40,987 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:52:40] "GET /api/analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 17:53:12,340 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:53:12] "GET / HTTP/1.1" 200 -
+2025-12-05 17:53:12,657 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:53:12] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:53:12,969 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:53:12] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:55:33,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 17:55:33,377 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 17:55:34,485 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 17:55:50,982 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 17:55:50,982 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 17:55:50,993 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 17:55:52,419 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 17:55:52,421 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 17:55:54,580 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:55:54] "GET / HTTP/1.1" 200 -
+2025-12-05 17:55:54,606 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:55:54] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:55:54,822 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:55:54] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:55:58,583 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:55:58] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:56:01,665 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:01] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:56:03,013 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:56:03,025 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:56:03,286 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:56:03,288 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:56:03,310 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:03] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:56:49,336 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:49] "GET / HTTP/1.1" 200 -
+2025-12-05 17:56:49,432 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:49] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:56:49,603 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:49] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:56:51,500 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:51] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:56:53,391 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:53] "GET /analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 17:56:53,985 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 17:56:53,987 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:56:54,264 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 17:56:54,269 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:56:54,293 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:56:54] "GET /api/analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 17:57:32,227 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:32] "GET / HTTP/1.1" 200 -
+2025-12-05 17:57:32,539 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:32] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:57:32,851 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:32] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:57:34,215 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:34] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:57:36,391 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:36] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:57:36,449 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:36] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:57:39,725 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:39] "GET / HTTP/1.1" 200 -
+2025-12-05 17:57:40,033 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:40] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:57:40,355 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:40] "GET /status HTTP/1.1" 200 -
+2025-12-05 17:57:41,655 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:41] "POST /search HTTP/1.1" 200 -
+2025-12-05 17:57:43,260 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:43] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 17:57:43,913 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:57:43,915 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:57:44,287 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 17:57:44,290 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 17:57:44,315 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 17:57:44] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 19:27:50,950 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 19:27:50,950 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 19:27:50,966 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 19:27:51,787 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 19:27:51,792 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 19:27:53,456 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:27:53] "GET / HTTP/1.1" 200 -
+2025-12-05 19:27:53,477 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:27:53] "GET /status HTTP/1.1" 200 -
+2025-12-05 19:27:53,711 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:27:53] "GET /status HTTP/1.1" 200 -
+2025-12-05 19:27:58,169 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:27:58] "POST /search HTTP/1.1" 200 -
+2025-12-05 19:29:04,546 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 19:29:04,546 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 19:29:04,551 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 19:29:05,542 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 19:29:05,544 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 19:29:10,163 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:10] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 19:29:10,189 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:10] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 19:29:44,303 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:44] "GET / HTTP/1.1" 200 -
+2025-12-05 19:29:44,605 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:44] "GET /status HTTP/1.1" 200 -
+2025-12-05 19:29:44,915 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:44] "GET /status HTTP/1.1" 200 -
+2025-12-05 19:29:46,205 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:46] "POST /search HTTP/1.1" 200 -
+2025-12-05 19:29:47,755 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:47] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 19:29:48,663 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 19:29:48,667 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\core\\frame.py', reloading
+2025-12-05 19:29:48,669 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\base.py', reloading
+2025-12-05 19:29:48,671 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 19:29:48,821 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 19:29:48,822 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 19:29:48,833 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:29:48] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 19:29:49,418 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 19:29:50,320 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 19:29:50,322 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 19:33:22,082 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:33:22] "GET / HTTP/1.1" 200 -
+2025-12-05 19:33:22,156 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:33:22] "GET /status HTTP/1.1" 200 -
+2025-12-05 19:33:22,336 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:33:22] "GET /status HTTP/1.1" 200 -
+2025-12-05 19:33:50,908 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:33:50] "POST /search HTTP/1.1" 200 -
+2025-12-05 19:33:53,671 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:33:53] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 19:33:54,318 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 19:33:54,323 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 19:33:54,472 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 19:33:54,473 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 19:33:54,485 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 19:33:54] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 19:40:37,964 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 19:40:37,965 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 19:40:37,965 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 19:40:39,077 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 19:40:40,036 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 19:40:40,037 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 19:41:10,787 - __main__ - INFO - Starting Crypto Exchange Analyzer - Pipe and Filter Architecture
+2025-12-05 19:41:10,788 - utils.timer - INFO - Starting Complete Crypto Exchange Data Pipeline...
+2025-12-05 19:41:10,788 - __main__ - INFO -  FILTER 1: Downloading and validating cryptocurrency symbols
+2025-12-05 19:41:10,788 - filters.symbol_filter - INFO - Starting symbol filter: Fetching top cryptocurrencies
+2025-12-05 19:41:17,445 - utils.csv_manager - INFO - Saved 827 symbols to data\symbols\crypto_symbols_20251205_194117.csv
+2025-12-05 19:41:17,446 - filters.symbol_filter - INFO - Symbol filter completed: Found 827 valid cryptocurrencies
+2025-12-05 19:41:17,447 - __main__ - INFO -  FILTER 1 COMPLETED: 827 valid symbols retrieved
+2025-12-05 19:41:17,447 - __main__ - INFO -  FILTER 2: Checking existing data dates and update requirements
+2025-12-05 19:41:17,447 - filters.date_check_filter - INFO - Starting date check filter
+2025-12-05 19:41:17,479 - filters.date_check_filter - INFO - Date check completed: 827/827 need updates
+2025-12-05 19:41:17,479 - __main__ - INFO -  FILTER 2 COMPLETED: 827/827 require updates
+2025-12-05 19:41:17,479 - __main__ - INFO -  FILTER 3: Downloading and processing missing exchange data
+2025-12-05 19:41:17,479 - filters.data_fill_filter - INFO - Starting data fill filter
+2025-12-05 19:41:17,479 - filters.data_fill_filter - INFO - Processing bitcoin - Bitcoin
+2025-12-05 19:41:18,023 - filters.data_fill_filter - ERROR - Error downloading historical data for bitcoin: 401 Client Error: Unauthorized for url: https://api.coingecko.com/api/v3/coins/bitcoin/ohlc?vs_currency=usd&days=max
+2025-12-05 19:41:18,397 - filters.data_fill_filter - ERROR - Error downloading current metrics for bitcoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:41:18,399 - filters.data_fill_filter - INFO - Successfully processed bitcoin
+2025-12-05 19:41:25,399 - filters.data_fill_filter - INFO - Processing ethereum - Ethereum
+2025-12-05 19:41:26,199 - filters.data_fill_filter - ERROR - Error downloading historical data for ethereum: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/ethereum/ohlc?vs_currency=usd&days=max
+2025-12-05 19:41:26,556 - filters.data_fill_filter - ERROR - Error downloading current metrics for ethereum: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/ethereum?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:41:26,558 - filters.data_fill_filter - INFO - Successfully processed ethereum
+2025-12-05 19:41:33,559 - filters.data_fill_filter - INFO - Processing ripple - XRP
+2025-12-05 19:41:33,929 - filters.data_fill_filter - ERROR - Error downloading historical data for ripple: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/ripple/ohlc?vs_currency=usd&days=max
+2025-12-05 19:41:34,287 - filters.data_fill_filter - ERROR - Error downloading current metrics for ripple: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/ripple?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:41:34,289 - filters.data_fill_filter - INFO - Successfully processed ripple
+2025-12-05 19:41:41,289 - filters.data_fill_filter - INFO - Processing binancecoin - BNB
+2025-12-05 19:41:41,647 - filters.data_fill_filter - ERROR - Error downloading historical data for binancecoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/binancecoin/ohlc?vs_currency=usd&days=max
+2025-12-05 19:41:41,996 - filters.data_fill_filter - ERROR - Error downloading current metrics for binancecoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/binancecoin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:41:41,998 - filters.data_fill_filter - INFO - Successfully processed binancecoin
+2025-12-05 19:41:48,998 - filters.data_fill_filter - INFO - Processing solana - Solana
+2025-12-05 19:41:49,368 - filters.data_fill_filter - ERROR - Error downloading historical data for solana: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/solana/ohlc?vs_currency=usd&days=max
+2025-12-05 19:41:49,730 - filters.data_fill_filter - ERROR - Error downloading current metrics for solana: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/solana?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:41:49,732 - filters.data_fill_filter - INFO - Successfully processed solana
+2025-12-05 19:41:56,733 - filters.data_fill_filter - INFO - Processing tron - TRON
+2025-12-05 19:41:57,100 - filters.data_fill_filter - ERROR - Error downloading historical data for tron: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/tron/ohlc?vs_currency=usd&days=max
+2025-12-05 19:41:57,474 - filters.data_fill_filter - ERROR - Error downloading current metrics for tron: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/tron?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:41:57,476 - filters.data_fill_filter - INFO - Successfully processed tron
+2025-12-05 19:42:04,476 - filters.data_fill_filter - INFO - Processing staked-ether - Lido Staked Ether
+2025-12-05 19:42:04,874 - filters.data_fill_filter - ERROR - Error downloading historical data for staked-ether: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/staked-ether/ohlc?vs_currency=usd&days=max
+2025-12-05 19:42:05,312 - filters.data_fill_filter - ERROR - Error downloading current metrics for staked-ether: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/staked-ether?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:42:05,325 - filters.data_fill_filter - INFO - Successfully processed staked-ether
+2025-12-05 19:42:12,326 - filters.data_fill_filter - INFO - Processing dogecoin - Dogecoin
+2025-12-05 19:42:12,696 - filters.data_fill_filter - ERROR - Error downloading historical data for dogecoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/dogecoin/ohlc?vs_currency=usd&days=max
+2025-12-05 19:42:13,068 - filters.data_fill_filter - ERROR - Error downloading current metrics for dogecoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/dogecoin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:42:13,069 - filters.data_fill_filter - INFO - Successfully processed dogecoin
+2025-12-05 19:42:20,070 - filters.data_fill_filter - INFO - Processing cardano - Cardano
+2025-12-05 19:42:20,733 - filters.data_fill_filter - ERROR - Error downloading historical data for cardano: 401 Client Error: Unauthorized for url: https://api.coingecko.com/api/v3/coins/cardano/ohlc?vs_currency=usd&days=max
+2025-12-05 19:42:21,401 - utils.csv_manager - INFO - Saved 1 metrics records for cardano
+2025-12-05 19:42:21,402 - filters.data_fill_filter - INFO - Successfully processed cardano
+2025-12-05 19:42:28,402 - filters.data_fill_filter - INFO - Processing figure-heloc - Figure Heloc
+2025-12-05 19:42:28,990 - filters.data_fill_filter - ERROR - Error downloading historical data for figure-heloc: 401 Client Error: Unauthorized for url: https://api.coingecko.com/api/v3/coins/figure-heloc/ohlc?vs_currency=usd&days=max
+2025-12-05 19:42:29,360 - filters.data_fill_filter - ERROR - Error downloading current metrics for figure-heloc: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/figure-heloc?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:42:29,361 - filters.data_fill_filter - INFO - Successfully processed figure-heloc
+2025-12-05 19:42:36,361 - filters.data_fill_filter - INFO - Processing whitebit - WhiteBIT Coin
+2025-12-05 19:42:36,712 - filters.data_fill_filter - ERROR - Error downloading historical data for whitebit: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/whitebit/ohlc?vs_currency=usd&days=max
+2025-12-05 19:42:37,144 - filters.data_fill_filter - ERROR - Error downloading current metrics for whitebit: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/whitebit?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:42:37,145 - filters.data_fill_filter - INFO - Successfully processed whitebit
+2025-12-05 19:42:44,146 - filters.data_fill_filter - INFO - Processing wrapped-steth - Wrapped stETH
+2025-12-05 19:42:44,570 - filters.data_fill_filter - ERROR - Error downloading historical data for wrapped-steth: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/wrapped-steth/ohlc?vs_currency=usd&days=max
+2025-12-05 19:42:44,925 - filters.data_fill_filter - ERROR - Error downloading current metrics for wrapped-steth: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/wrapped-steth?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:42:44,926 - filters.data_fill_filter - INFO - Successfully processed wrapped-steth
+2025-12-05 19:42:51,927 - filters.data_fill_filter - INFO - Processing bitcoin-cash - Bitcoin Cash
+2025-12-05 19:42:52,290 - filters.data_fill_filter - ERROR - Error downloading historical data for bitcoin-cash: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/bitcoin-cash/ohlc?vs_currency=usd&days=max
+2025-12-05 19:42:52,628 - filters.data_fill_filter - ERROR - Error downloading current metrics for bitcoin-cash: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/bitcoin-cash?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:42:52,629 - filters.data_fill_filter - INFO - Successfully processed bitcoin-cash
+2025-12-05 19:42:59,630 - filters.data_fill_filter - INFO - Processing wrapped-bitcoin - Wrapped Bitcoin
+2025-12-05 19:43:00,007 - filters.data_fill_filter - ERROR - Error downloading historical data for wrapped-bitcoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/wrapped-bitcoin/ohlc?vs_currency=usd&days=max
+2025-12-05 19:43:00,361 - filters.data_fill_filter - ERROR - Error downloading current metrics for wrapped-bitcoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/wrapped-bitcoin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:43:00,362 - filters.data_fill_filter - INFO - Successfully processed wrapped-bitcoin
+2025-12-05 19:43:07,363 - filters.data_fill_filter - INFO - Processing wrapped-beacon-eth - Wrapped Beacon ETH
+2025-12-05 19:43:07,766 - filters.data_fill_filter - ERROR - Error downloading historical data for wrapped-beacon-eth: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/wrapped-beacon-eth/ohlc?vs_currency=usd&days=max
+2025-12-05 19:43:08,172 - filters.data_fill_filter - ERROR - Error downloading current metrics for wrapped-beacon-eth: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/wrapped-beacon-eth?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:43:08,173 - filters.data_fill_filter - INFO - Successfully processed wrapped-beacon-eth
+2025-12-05 19:43:15,174 - filters.data_fill_filter - INFO - Processing usds - USDS
+2025-12-05 19:43:15,529 - filters.data_fill_filter - ERROR - Error downloading historical data for usds: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/usds/ohlc?vs_currency=usd&days=max
+2025-12-05 19:43:15,899 - filters.data_fill_filter - ERROR - Error downloading current metrics for usds: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/usds?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:43:15,900 - filters.data_fill_filter - INFO - Successfully processed usds
+2025-12-05 19:43:22,900 - filters.data_fill_filter - INFO - Processing chainlink - Chainlink
+2025-12-05 19:43:23,252 - filters.data_fill_filter - ERROR - Error downloading historical data for chainlink: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/chainlink/ohlc?vs_currency=usd&days=max
+2025-12-05 19:43:23,609 - filters.data_fill_filter - ERROR - Error downloading current metrics for chainlink: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/chainlink?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:43:23,611 - filters.data_fill_filter - INFO - Successfully processed chainlink
+2025-12-05 19:43:30,611 - filters.data_fill_filter - INFO - Processing binance-bridged-usdt-bnb-smart-chain - Binance Bridged USDT (BNB Smart Chain)
+2025-12-05 19:43:31,231 - filters.data_fill_filter - ERROR - Error downloading historical data for binance-bridged-usdt-bnb-smart-chain: 401 Client Error: Unauthorized for url: https://api.coingecko.com/api/v3/coins/binance-bridged-usdt-bnb-smart-chain/ohlc?vs_currency=usd&days=max
+2025-12-05 19:43:31,887 - utils.csv_manager - INFO - Saved 1 metrics records for binance-bridged-usdt-bnb-smart-chain
+2025-12-05 19:43:31,887 - filters.data_fill_filter - INFO - Successfully processed binance-bridged-usdt-bnb-smart-chain
+2025-12-05 19:43:35,383 - utils.timer - INFO - Complete Crypto Exchange Data Pipeline completed in 144.60 seconds
+2025-12-05 19:52:02,838 - __main__ - INFO - Starting Crypto Exchange Analyzer - Pipe and Filter Architecture
+2025-12-05 19:52:02,838 - utils.timer - INFO - Starting Complete Crypto Exchange Data Pipeline...
+2025-12-05 19:52:02,838 - __main__ - INFO -  FILTER 1: Downloading and validating cryptocurrency symbols
+2025-12-05 19:52:02,838 - filters.symbol_filter - INFO - Starting symbol filter: Fetching top cryptocurrencies
+2025-12-05 19:52:09,206 - utils.csv_manager - INFO - Saved 828 symbols to data\symbols\crypto_symbols_20251205_195209.csv
+2025-12-05 19:52:09,206 - filters.symbol_filter - INFO - Symbol filter completed: Found 828 valid cryptocurrencies
+2025-12-05 19:52:09,207 - __main__ - INFO -  FILTER 1 COMPLETED: 828 valid symbols retrieved
+2025-12-05 19:52:09,207 - __main__ - INFO -  FILTER 2: Checking existing data dates and update requirements
+2025-12-05 19:52:09,208 - filters.date_check_filter - INFO - Starting date check filter
+2025-12-05 19:52:09,230 - filters.date_check_filter - INFO - Date check completed: 828/828 need updates
+2025-12-05 19:52:09,230 - __main__ - INFO -  FILTER 2 COMPLETED: 828/828 require updates
+2025-12-05 19:52:09,231 - __main__ - INFO -  FILTER 3: Downloading and processing missing exchange data
+2025-12-05 19:52:09,231 - filters.data_fill_filter - INFO - Starting data fill filter
+2025-12-05 19:52:09,231 - filters.data_fill_filter - INFO - Processing bitcoin - Bitcoin
+2025-12-05 19:52:09,804 - filters.data_fill_filter - ERROR - Error for bitcoin: 400 Client Error: Bad Request for url: https://api.coingecko.com/api/v3/coins/bitcoin/ohlc?vs_currency=usd&days=3650
+2025-12-05 19:52:10,158 - filters.data_fill_filter - ERROR - Error downloading current metrics for bitcoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=true&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:52:10,159 - filters.data_fill_filter - INFO - Successfully processed bitcoin
+2025-12-05 19:52:25,160 - filters.data_fill_filter - INFO - Processing ethereum - Ethereum
+2025-12-05 19:52:25,547 - filters.data_fill_filter - WARNING - Rate limited for ethereum, waiting...
+2025-12-05 19:53:26,255 - utils.csv_manager - INFO - Saved 1 metrics records for ethereum
+2025-12-05 19:53:26,255 - filters.data_fill_filter - INFO - Successfully processed ethereum
+2025-12-05 19:53:41,256 - filters.data_fill_filter - INFO - Processing ripple - XRP
+2025-12-05 19:53:41,809 - filters.data_fill_filter - ERROR - Error for ripple: 400 Client Error: Bad Request for url: https://api.coingecko.com/api/v3/coins/ripple/ohlc?vs_currency=usd&days=3650
+2025-12-05 19:53:42,449 - utils.csv_manager - INFO - Saved 1 metrics records for ripple
+2025-12-05 19:53:42,450 - filters.data_fill_filter - INFO - Successfully processed ripple
+2025-12-05 19:53:57,450 - filters.data_fill_filter - INFO - Processing binancecoin - BNB
+2025-12-05 19:53:58,006 - filters.data_fill_filter - ERROR - Error for binancecoin: 400 Client Error: Bad Request for url: https://api.coingecko.com/api/v3/coins/binancecoin/ohlc?vs_currency=usd&days=3650
+2025-12-05 19:53:58,659 - utils.csv_manager - INFO - Saved 1 metrics records for binancecoin
+2025-12-05 19:53:58,659 - filters.data_fill_filter - INFO - Successfully processed binancecoin
+2025-12-05 19:54:13,660 - filters.data_fill_filter - INFO - Processing solana - Solana
+2025-12-05 19:54:14,220 - filters.data_fill_filter - ERROR - Error for solana: 400 Client Error: Bad Request for url: https://api.coingecko.com/api/v3/coins/solana/ohlc?vs_currency=usd&days=3650
+2025-12-05 19:54:14,827 - utils.csv_manager - INFO - Saved 1 metrics records for solana
+2025-12-05 19:54:14,828 - filters.data_fill_filter - INFO - Successfully processed solana
+2025-12-05 19:54:16,889 - utils.timer - INFO - Complete Crypto Exchange Data Pipeline completed in 134.05 seconds
+2025-12-05 19:56:19,223 - __main__ - INFO - Starting Crypto Exchange Analyzer - Pipe and Filter Architecture
+2025-12-05 19:56:19,224 - utils.timer - INFO - Starting Complete Crypto Exchange Data Pipeline...
+2025-12-05 19:56:19,224 - __main__ - INFO -  FILTER 1: Downloading and validating cryptocurrency symbols
+2025-12-05 19:56:19,224 - filters.symbol_filter - INFO - Starting symbol filter: Fetching top cryptocurrencies
+2025-12-05 19:56:25,849 - utils.csv_manager - INFO - Saved 828 symbols to data\symbols\crypto_symbols_20251205_195625.csv
+2025-12-05 19:56:25,849 - filters.symbol_filter - INFO - Symbol filter completed: Found 828 valid cryptocurrencies
+2025-12-05 19:56:25,850 - __main__ - INFO -  FILTER 1 COMPLETED: 828 valid symbols retrieved
+2025-12-05 19:56:25,850 - __main__ - INFO -  FILTER 2: Checking existing data dates and update requirements
+2025-12-05 19:56:25,850 - filters.date_check_filter - INFO - Starting date check filter
+2025-12-05 19:56:25,873 - filters.date_check_filter - INFO - Date check completed: 828/828 need updates
+2025-12-05 19:56:25,873 - __main__ - INFO -  FILTER 2 COMPLETED: 828/828 require updates
+2025-12-05 19:56:25,873 - __main__ - INFO -  FILTER 3: Downloading and processing missing exchange data
+2025-12-05 19:56:25,873 - filters.data_fill_filter - INFO - Starting data fill filter
+2025-12-05 19:56:25,873 - filters.data_fill_filter - INFO - Processing bitcoin - Bitcoin
+2025-12-05 19:56:26,846 - filters.data_fill_filter - ERROR - Error downloading current metrics for bitcoin: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/bitcoin?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:56:26,852 - utils.csv_manager - INFO - Saved 3 historical records for bitcoin
+2025-12-05 19:56:26,853 - filters.data_fill_filter - INFO - Saved 3 historical records for bitcoin
+2025-12-05 19:56:26,853 - filters.data_fill_filter - INFO - Successfully processed bitcoin
+2025-12-05 19:56:41,854 - filters.data_fill_filter - INFO - Processing ethereum - Ethereum
+2025-12-05 19:56:42,593 - filters.data_fill_filter - WARNING - Rate limited for ethereum, waiting...
+2025-12-05 19:57:43,312 - utils.csv_manager - INFO - Saved 1 metrics records for ethereum
+2025-12-05 19:57:43,312 - filters.data_fill_filter - INFO - Successfully processed ethereum
+2025-12-05 19:57:58,313 - filters.data_fill_filter - INFO - Processing ripple - XRP
+2025-12-05 19:57:59,544 - utils.csv_manager - INFO - Saved 92 historical records for ripple
+2025-12-05 19:57:59,544 - filters.data_fill_filter - INFO - Saved 92 historical records for ripple
+2025-12-05 19:57:59,548 - utils.csv_manager - INFO - Saved 1 metrics records for ripple
+2025-12-05 19:57:59,548 - filters.data_fill_filter - INFO - Successfully processed ripple
+2025-12-05 19:58:14,549 - filters.data_fill_filter - INFO - Processing binancecoin - BNB
+2025-12-05 19:58:15,769 - utils.csv_manager - INFO - Saved 92 historical records for binancecoin
+2025-12-05 19:58:15,769 - filters.data_fill_filter - INFO - Saved 92 historical records for binancecoin
+2025-12-05 19:58:15,772 - utils.csv_manager - INFO - Saved 1 metrics records for binancecoin
+2025-12-05 19:58:15,772 - filters.data_fill_filter - INFO - Successfully processed binancecoin
+2025-12-05 19:58:30,773 - filters.data_fill_filter - INFO - Processing solana - Solana
+2025-12-05 19:58:32,178 - utils.csv_manager - INFO - Saved 92 historical records for solana
+2025-12-05 19:58:32,178 - filters.data_fill_filter - INFO - Saved 92 historical records for solana
+2025-12-05 19:58:32,181 - utils.csv_manager - INFO - Saved 1 metrics records for solana
+2025-12-05 19:58:32,181 - filters.data_fill_filter - INFO - Successfully processed solana
+2025-12-05 19:58:47,182 - filters.data_fill_filter - INFO - Processing tron - TRON
+2025-12-05 19:58:48,618 - filters.data_fill_filter - ERROR - Error downloading current metrics for tron: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/tron?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false
+2025-12-05 19:58:48,624 - utils.csv_manager - INFO - Saved 5 historical records for tron
+2025-12-05 19:58:48,624 - filters.data_fill_filter - INFO - Saved 5 historical records for tron
+2025-12-05 19:58:48,624 - filters.data_fill_filter - INFO - Successfully processed tron
+2025-12-05 19:59:03,626 - filters.data_fill_filter - INFO - Processing staked-ether - Lido Staked Ether
+2025-12-05 19:59:03,993 - filters.data_fill_filter - WARNING - Rate limited for staked-ether, waiting...
+2025-12-05 20:00:04,697 - utils.csv_manager - INFO - Saved 1 metrics records for staked-ether
+2025-12-05 20:00:04,698 - filters.data_fill_filter - INFO - Successfully processed staked-ether
+2025-12-05 20:00:19,698 - filters.data_fill_filter - INFO - Processing dogecoin - Dogecoin
+2025-12-05 20:00:21,600 - utils.csv_manager - INFO - Saved 5 historical records for dogecoin
+2025-12-05 20:00:21,600 - filters.data_fill_filter - INFO - Saved 5 historical records for dogecoin
+2025-12-05 20:00:21,604 - utils.csv_manager - INFO - Saved 1 metrics records for dogecoin
+2025-12-05 20:00:21,604 - filters.data_fill_filter - INFO - Successfully processed dogecoin
+2025-12-05 20:00:36,605 - filters.data_fill_filter - INFO - Processing cardano - Cardano
+2025-12-05 20:00:37,707 - utils.csv_manager - INFO - Saved 92 historical records for cardano
+2025-12-05 20:00:37,707 - filters.data_fill_filter - INFO - Saved 92 historical records for cardano
+2025-12-05 20:00:37,710 - utils.csv_manager - INFO - Saved 1 metrics records for cardano
+2025-12-05 20:00:37,711 - filters.data_fill_filter - INFO - Successfully processed cardano
+2025-12-05 20:00:52,711 - filters.data_fill_filter - INFO - Processing figure-heloc - Figure Heloc
+2025-12-05 20:00:53,093 - filters.data_fill_filter - WARNING - Rate limited for figure-heloc, waiting...
+2025-12-05 20:01:53,823 - utils.csv_manager - INFO - Saved 1 metrics records for figure-heloc
+2025-12-05 20:01:53,823 - filters.data_fill_filter - INFO - Successfully processed figure-heloc
+2025-12-05 20:02:08,824 - filters.data_fill_filter - INFO - Processing whitebit - WhiteBIT Coin
+2025-12-05 20:02:10,347 - utils.csv_manager - INFO - Saved 89 historical records for whitebit
+2025-12-05 20:02:10,347 - filters.data_fill_filter - INFO - Saved 89 historical records for whitebit
+2025-12-05 20:02:10,352 - utils.csv_manager - INFO - Saved 1 metrics records for whitebit
+2025-12-05 20:02:10,352 - filters.data_fill_filter - INFO - Successfully processed whitebit
+2025-12-05 20:02:25,352 - filters.data_fill_filter - INFO - Processing wrapped-steth - Wrapped stETH
+2025-12-05 20:02:26,658 - utils.csv_manager - INFO - Saved 92 historical records for wrapped-steth
+2025-12-05 20:02:26,658 - filters.data_fill_filter - INFO - Saved 92 historical records for wrapped-steth
+2025-12-05 20:02:26,661 - utils.csv_manager - INFO - Saved 1 metrics records for wrapped-steth
+2025-12-05 20:02:26,661 - filters.data_fill_filter - INFO - Successfully processed wrapped-steth
+2025-12-05 20:02:41,661 - filters.data_fill_filter - INFO - Processing bitcoin-cash - Bitcoin Cash
+2025-12-05 20:02:42,701 - filters.data_fill_filter - ERROR - Error downloading current metrics for bitcoin-cash: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/bitcoin-cash?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false
+2025-12-05 20:02:42,708 - utils.csv_manager - INFO - Saved 5 historical records for bitcoin-cash
+2025-12-05 20:02:42,708 - filters.data_fill_filter - INFO - Saved 5 historical records for bitcoin-cash
+2025-12-05 20:02:42,708 - filters.data_fill_filter - INFO - Successfully processed bitcoin-cash
+2025-12-05 20:02:57,709 - filters.data_fill_filter - INFO - Processing wrapped-bitcoin - Wrapped Bitcoin
+2025-12-05 20:02:58,104 - filters.data_fill_filter - WARNING - Rate limited for wrapped-bitcoin, waiting...
+2025-12-05 20:03:58,872 - utils.csv_manager - INFO - Saved 1 metrics records for wrapped-bitcoin
+2025-12-05 20:03:58,872 - filters.data_fill_filter - INFO - Successfully processed wrapped-bitcoin
+2025-12-05 20:04:13,873 - filters.data_fill_filter - INFO - Processing wrapped-beacon-eth - Wrapped Beacon ETH
+2025-12-05 20:04:15,136 - utils.csv_manager - INFO - Saved 92 historical records for wrapped-beacon-eth
+2025-12-05 20:04:15,136 - filters.data_fill_filter - INFO - Saved 92 historical records for wrapped-beacon-eth
+2025-12-05 20:04:15,140 - utils.csv_manager - INFO - Saved 1 metrics records for wrapped-beacon-eth
+2025-12-05 20:04:15,140 - filters.data_fill_filter - INFO - Successfully processed wrapped-beacon-eth
+2025-12-05 20:04:30,140 - filters.data_fill_filter - INFO - Processing usds - USDS
+2025-12-05 20:04:31,513 - utils.csv_manager - INFO - Saved 92 historical records for usds
+2025-12-05 20:04:31,514 - filters.data_fill_filter - INFO - Saved 92 historical records for usds
+2025-12-05 20:04:31,517 - utils.csv_manager - INFO - Saved 1 metrics records for usds
+2025-12-05 20:04:31,518 - filters.data_fill_filter - INFO - Successfully processed usds
+2025-12-05 20:04:46,518 - filters.data_fill_filter - INFO - Processing chainlink - Chainlink
+2025-12-05 20:04:47,569 - filters.data_fill_filter - ERROR - Error downloading current metrics for chainlink: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/chainlink?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false
+2025-12-05 20:04:47,576 - utils.csv_manager - INFO - Saved 5 historical records for chainlink
+2025-12-05 20:04:47,577 - filters.data_fill_filter - INFO - Saved 5 historical records for chainlink
+2025-12-05 20:04:47,577 - filters.data_fill_filter - INFO - Successfully processed chainlink
+2025-12-05 20:05:02,578 - filters.data_fill_filter - INFO - Processing binance-bridged-usdt-bnb-smart-chain - Binance Bridged USDT (BNB Smart Chain)
+2025-12-05 20:05:02,952 - filters.data_fill_filter - WARNING - Rate limited for binance-bridged-usdt-bnb-smart-chain, waiting...
+2025-12-05 20:06:03,700 - utils.csv_manager - INFO - Saved 1 metrics records for binance-bridged-usdt-bnb-smart-chain
+2025-12-05 20:06:03,700 - filters.data_fill_filter - INFO - Successfully processed binance-bridged-usdt-bnb-smart-chain
+2025-12-05 20:06:18,701 - filters.data_fill_filter - INFO - Processing leo-token - LEO Token
+2025-12-05 20:06:19,954 - utils.csv_manager - INFO - Saved 92 historical records for leo-token
+2025-12-05 20:06:19,954 - filters.data_fill_filter - INFO - Saved 92 historical records for leo-token
+2025-12-05 20:06:19,958 - utils.csv_manager - INFO - Saved 1 metrics records for leo-token
+2025-12-05 20:06:19,958 - filters.data_fill_filter - INFO - Successfully processed leo-token
+2025-12-05 20:06:34,958 - filters.data_fill_filter - INFO - Processing weth - WETH
+2025-12-05 20:06:36,268 - utils.csv_manager - INFO - Saved 5 historical records for weth
+2025-12-05 20:06:36,269 - filters.data_fill_filter - INFO - Saved 5 historical records for weth
+2025-12-05 20:06:36,271 - utils.csv_manager - INFO - Saved 1 metrics records for weth
+2025-12-05 20:06:36,272 - filters.data_fill_filter - INFO - Successfully processed weth
+2025-12-05 20:06:51,273 - filters.data_fill_filter - INFO - Processing hyperliquid - Hyperliquid
+2025-12-05 20:06:51,660 - filters.data_fill_filter - WARNING - Rate limited for hyperliquid, waiting...
+2025-12-05 20:07:52,291 - utils.csv_manager - INFO - Saved 1 metrics records for hyperliquid
+2025-12-05 20:07:52,291 - filters.data_fill_filter - INFO - Successfully processed hyperliquid
+2025-12-05 20:08:07,292 - filters.data_fill_filter - INFO - Processing stellar - Stellar
+2025-12-05 20:08:08,630 - utils.csv_manager - INFO - Saved 92 historical records for stellar
+2025-12-05 20:08:08,631 - filters.data_fill_filter - INFO - Saved 92 historical records for stellar
+2025-12-05 20:08:08,632 - utils.csv_manager - INFO - Saved 1 metrics records for stellar
+2025-12-05 20:08:08,632 - filters.data_fill_filter - INFO - Successfully processed stellar
+2025-12-05 20:08:23,633 - filters.data_fill_filter - INFO - Processing wrapped-eeth - Wrapped eETH
+2025-12-05 20:08:24,975 - utils.csv_manager - INFO - Saved 92 historical records for wrapped-eeth
+2025-12-05 20:08:24,975 - filters.data_fill_filter - INFO - Saved 92 historical records for wrapped-eeth
+2025-12-05 20:08:24,977 - utils.csv_manager - INFO - Saved 1 metrics records for wrapped-eeth
+2025-12-05 20:08:24,977 - filters.data_fill_filter - INFO - Successfully processed wrapped-eeth
+2025-12-05 20:08:39,977 - filters.data_fill_filter - INFO - Processing monero - Monero
+2025-12-05 20:08:40,980 - filters.data_fill_filter - ERROR - Error downloading current metrics for monero: 429 Client Error: Too Many Requests for url: https://api.coingecko.com/api/v3/coins/monero?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false
+2025-12-05 20:08:40,989 - utils.csv_manager - INFO - Saved 5 historical records for monero
+2025-12-05 20:08:40,989 - filters.data_fill_filter - INFO - Saved 5 historical records for monero
+2025-12-05 20:08:40,989 - filters.data_fill_filter - INFO - Successfully processed monero
+2025-12-05 20:08:55,989 - filters.data_fill_filter - INFO - Processing ethena-usde - Ethena USDe
+2025-12-05 20:08:56,360 - filters.data_fill_filter - WARNING - Rate limited for ethena-usde, waiting...
+2025-12-05 20:09:01,589 - utils.timer - INFO - Complete Crypto Exchange Data Pipeline completed in 762.37 seconds
+2025-12-05 20:09:11,931 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 20:09:11,931 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 20:09:11,936 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:09:12,710 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:09:12,712 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:09:14,054 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:09:14] "GET / HTTP/1.1" 200 -
+2025-12-05 20:09:14,070 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:09:14] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:09:14,312 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:09:14] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:09:16,430 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:09:16] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:09:17,785 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:09:17] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:09:18,703 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:09:18,707 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:09:18,903 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:09:18,904 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:09:18,922 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:09:18] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:09:28,583 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\config.py', reloading
+2025-12-05 20:09:28,583 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\config.py', reloading
+2025-12-05 20:09:29,376 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:09:30,164 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:09:30,166 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:10:27,172 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:10:27] "GET / HTTP/1.1" 200 -
+2025-12-05 20:10:27,245 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:10:27] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:10:27,416 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:10:27] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:10:30,165 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:10:30] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:10:32,547 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:10:32] "GET /analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 20:10:33,180 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 20:10:33,187 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:10:33,347 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 20:10:33,348 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:10:33,359 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:10:33] "GET /api/analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 20:20:00,634 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 20:20:00,634 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 20:20:00,635 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 20:20:01,267 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:20:02,205 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:20:02,206 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:20:46,603 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\analysis\\technical_analyzer.py', reloading
+2025-12-05 20:20:46,603 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\analysis\\technical_analyzer.py', reloading
+2025-12-05 20:20:46,603 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\analysis\\technical_analyzer.py', reloading
+2025-12-05 20:20:46,948 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:20:47,823 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:20:47,825 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:22:14,343 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:22:14,343 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:22:15,391 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:22:16,311 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:22:16,313 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:29:42,162 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\core\\groupby\\__init__.py', reloading
+2025-12-05 20:29:42,967 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:29:42,968 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:29:42,968 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:29:43,298 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:29:44,411 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:29:44,413 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:35:27,592 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 20:35:27,593 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 20:35:27,598 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:35:28,376 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:35:28,378 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:35:31,728 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:31] "GET / HTTP/1.1" 200 -
+2025-12-05 20:35:31,739 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:31] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:35:31,983 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:31] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:35:34,301 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:34] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:35:35,578 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:35] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:35:47,785 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:47] "GET / HTTP/1.1" 200 -
+2025-12-05 20:35:48,092 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:48] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:35:48,396 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:48] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:35:50,225 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:50] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:35:51,987 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:35:51] "GET /analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 20:36:39,250 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:36:39] "GET / HTTP/1.1" 200 -
+2025-12-05 20:36:39,267 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:36:39] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:36:39,557 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:36:39] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:38:51,237 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 20:38:51,238 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\filters\\data_fill_filter.py', reloading
+2025-12-05 20:38:52,210 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:38:53,065 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:38:53,067 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:40:11,968 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:40:11,969 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:40:12,271 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:40:13,053 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:40:13,055 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:44:34,679 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 20:44:34,679 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 20:44:34,685 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:44:35,468 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:44:35,471 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:44:37,241 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:37] "GET / HTTP/1.1" 200 -
+2025-12-05 20:44:37,252 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:37] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:44:37,500 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:37] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:44:39,659 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:39] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:44:41,419 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:41] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:44:41,730 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:41] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:44:45,358 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:45] "GET / HTTP/1.1" 200 -
+2025-12-05 20:44:45,452 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:45] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:44:45,622 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:45] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:44:47,587 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:47] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:44:49,194 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:49] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:44:49,652 - __main__ - ERROR - Error in technical analysis for bitcoin: 'BBU_20_2.0'
+2025-12-05 20:44:49,671 - __main__ - ERROR - Error in technical analysis for bitcoin: 'BBU_20_2.0'
+2025-12-05 20:44:49,692 - __main__ - ERROR - Error in technical analysis for bitcoin: 'BBU_20_2.0'
+2025-12-05 20:44:49,701 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:44:49] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:45:18,094 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\analysis\\technical_analyzer.py', reloading
+2025-12-05 20:45:18,095 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\analysis\\technical_analyzer.py', reloading
+2025-12-05 20:45:18,095 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\analysis\\technical_analyzer.py', reloading
+2025-12-05 20:45:18,388 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:45:19,305 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:45:19,307 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:45:38,997 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 20:45:38,997 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 20:45:39,003 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:45:39,780 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:45:39,782 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:45:41,321 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:41] "GET / HTTP/1.1" 200 -
+2025-12-05 20:45:41,332 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:41] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:45:41,581 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:41] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:45:43,603 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:43] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:45:45,221 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:45] "GET /crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:45:45,533 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:45] "GET /api/crypto/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:45:47,620 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:47] "GET / HTTP/1.1" 200 -
+2025-12-05 20:45:47,720 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:47] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:45:47,885 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:47] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:45:52,845 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:52] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:45:54,187 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:54] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:45:54,816 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:45:54,965 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:45:54,973 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:45:54] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:47:15,122 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:47:15,123 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:47:15,123 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:47:15,470 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:47:16,412 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:47:16,414 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:47:54,948 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 20:47:54,948 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 20:47:54,953 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:47:55,736 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:47:55,738 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:47:57,154 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:47:57] "GET / HTTP/1.1" 200 -
+2025-12-05 20:47:57,166 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:47:57] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:47:57,416 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:47:57] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:48:03,983 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:03] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:48:05,306 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:05] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:48:06,221 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:48:06,225 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\core\\frame.py', reloading
+2025-12-05 20:48:06,226 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\.venv\\Lib\\site-packages\\pandas\\core\\indexes\\base.py', reloading
+2025-12-05 20:48:06,227 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:48:06,390 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:48:06,391 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:48:06,409 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:06] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:48:07,116 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:48:07,922 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:48:07,925 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:48:19,195 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:19] "GET / HTTP/1.1" 200 -
+2025-12-05 20:48:19,287 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:19] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:48:19,456 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:19] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:48:22,249 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:22] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:48:24,640 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:24] "GET /analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 20:48:25,518 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 20:48:25,524 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:48:25,784 - __main__ - ERROR - Error in technical analysis for ethereum: 'signal'
+2025-12-05 20:48:25,785 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:48:25,799 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:25] "GET /api/analysis/ethereum HTTP/1.1" 200 -
+2025-12-05 20:48:31,615 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:31] "GET / HTTP/1.1" 200 -
+2025-12-05 20:48:31,936 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:31] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:48:31,938 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:31] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:48:34,064 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:34] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:48:35,581 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:35] "GET /analysis/tron HTTP/1.1" 200 -
+2025-12-05 20:48:35,887 - __main__ - ERROR - Error in technical analysis for tron: 'signal'
+2025-12-05 20:48:35,889 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:48:36,026 - __main__ - ERROR - Error in technical analysis for tron: 'signal'
+2025-12-05 20:48:36,028 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:48:36,039 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:36] "GET /api/analysis/tron HTTP/1.1" 200 -
+2025-12-05 20:48:39,304 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:39] "GET / HTTP/1.1" 200 -
+2025-12-05 20:48:39,618 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:39] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:48:39,620 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:48:39] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:50:25,562 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\__init__.py', reloading
+2025-12-05 20:50:25,562 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementTree.py', reloading
+2025-12-05 20:50:25,573 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\xml\\etree\\ElementPath.py', reloading
+2025-12-05 20:50:26,081 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:50:26,964 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:50:26,965 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:50:50,918 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:50:50,919 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Bojana\\PycharmProjects\\DAS_domasna1\\web_prototype.py', reloading
+2025-12-05 20:50:51,502 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:50:52,394 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:50:52,396 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:50:52,877 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:50:52] "GET / HTTP/1.1" 200 -
+2025-12-05 20:50:52,892 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:50:52] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:50:53,139 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:50:53] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:50:57,975 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:50:57] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:51:53,582 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 20:51:53,582 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 20:51:53,588 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:51:54,360 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:51:54,361 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:51:55,854 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:51:55] "GET / HTTP/1.1" 200 -
+2025-12-05 20:51:55,868 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:51:55] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:51:56,104 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:51:56] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:51:58,413 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:51:58] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:52:00,711 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:52:00] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:52:01,630 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:52:01,636 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:52:01,786 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:52:01,788 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:52:01,799 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:52:01] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:53:49,192 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 20:53:49,192 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 20:53:49,197 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 20:53:49,992 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 20:53:49,994 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 20:53:51,408 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:53:51] "GET / HTTP/1.1" 200 -
+2025-12-05 20:53:51,426 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:53:51] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:53:51,670 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:53:51] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:53:53,496 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:53:53] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:53:56,812 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:53:56] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:53:57,734 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:53:57,738 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:53:57,889 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:53:57,890 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:53:57,900 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:53:57] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:54:17,901 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:54:17] "GET / HTTP/1.1" 200 -
+2025-12-05 20:54:18,017 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:54:18] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:54:18,154 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:54:18] "GET /status HTTP/1.1" 200 -
+2025-12-05 20:54:20,716 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:54:20] "POST /search HTTP/1.1" 200 -
+2025-12-05 20:54:23,900 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:54:23] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 20:54:24,227 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:54:24,228 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:54:24,381 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 20:54:24,383 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 20:54:24,392 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 20:54:24] "GET /api/analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 21:21:12,932 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.10:5000
+2025-12-05 21:21:12,933 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-05 21:21:12,940 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-05 21:21:13,697 - werkzeug - WARNING -  * Debugger is active!
+2025-12-05 21:21:13,699 - werkzeug - INFO -  * Debugger PIN: 747-264-965
+2025-12-05 21:21:15,303 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 21:21:15] "GET / HTTP/1.1" 200 -
+2025-12-05 21:21:15,316 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 21:21:15] "GET /status HTTP/1.1" 200 -
+2025-12-05 21:21:15,561 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 21:21:15] "GET /status HTTP/1.1" 200 -
+2025-12-05 21:21:17,646 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 21:21:17] "POST /search HTTP/1.1" 200 -
+2025-12-05 21:21:19,167 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 21:21:19] "GET /analysis/bitcoin HTTP/1.1" 200 -
+2025-12-05 21:21:20,214 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 21:21:20,220 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 21:21:20,382 - __main__ - ERROR - Error in technical analysis for bitcoin: 'signal'
+2025-12-05 21:21:20,383 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\web_prototype.py", line 261, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\analysis\technical_analyzer.py", line 295, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Bojana\PycharmProjects\DAS_domasna1\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-05 21:21:20,394 - werkzeug - INFO - 127.0.0.1 - - [05/Dec/2025 21:21:20] "GET /api/analysis/bitcoin HTTP/1.1" 200 -

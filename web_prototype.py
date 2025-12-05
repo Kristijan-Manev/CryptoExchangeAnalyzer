@@ -12,6 +12,15 @@ from filters.symbol_filter import SymbolFilter
 from filters.date_check_filter import DateCheckFilter
 from filters.data_fill_filter import DataFillFilter
 
+# Import Technical Analysis module
+try:
+    from analysis.technical_analyzer import TechnicalAnalyzer
+
+    TECHNICAL_ANALYSIS_AVAILABLE = True
+except ImportError:
+    TECHNICAL_ANALYSIS_AVAILABLE = False
+    print("⚠️  Technical Analysis module not found. Run: pip install pandas-ta numpy")
+
 
 class CryptoExchangeProcessor:
     def __init__(self):
@@ -19,6 +28,12 @@ class CryptoExchangeProcessor:
         self.symbol_filter = SymbolFilter(self.csv_manager)
         self.date_check_filter = DateCheckFilter(self.csv_manager)
         self.data_fill_filter = DataFillFilter(self.csv_manager)
+
+        if TECHNICAL_ANALYSIS_AVAILABLE:
+            self.technical_analyzer = TechnicalAnalyzer()
+        else:
+            self.technical_analyzer = None
+
         self.timer = PerformanceTimer()
         self.logger = self._setup_logging()
 
@@ -186,6 +201,164 @@ class CryptoExchangeProcessor:
             self.logger.error(f"Error getting all cryptocurrencies: {e}")
             return []
 
+    def _convert_numpy_types(self, obj):
+        """Convert numpy types to Python types for JSON serialization"""
+        import numpy as np
+        import pandas as pd
+
+        if isinstance(obj, dict):
+            return {k: self._convert_numpy_types(v) for k, v in obj.items()}
+        elif isinstance(obj, list):
+            return [self._convert_numpy_types(v) for v in obj]
+        elif isinstance(obj, tuple):
+            return tuple(self._convert_numpy_types(v) for v in obj)
+        elif pd.isna(obj):
+            return None
+        elif isinstance(obj, (np.integer, np.int64, np.int32, np.int16, np.int8)):
+            return int(obj)
+        elif isinstance(obj, (np.floating, np.float64, np.float32, np.float16)):
+            return float(obj)
+        elif isinstance(obj, np.bool_):
+            return bool(obj)
+        elif isinstance(obj, (pd.Timestamp, pd.DatetimeIndex)):
+            return str(obj)
+        else:
+            return obj
+
+    def perform_technical_analysis(self, crypto_id, time_frame='daily'):
+        """Perform technical analysis for a cryptocurrency"""
+        if not TECHNICAL_ANALYSIS_AVAILABLE or not self.technical_analyzer:
+            return None
+
+        try:
+            # Get historical data
+            historical_data = self._get_crypto_historical_data(crypto_id)
+
+            if not historical_data or len(historical_data) < 50:
+                self.logger.warning(f"Insufficient data for technical analysis of {crypto_id}")
+                return None
+
+            # Perform analysis
+            import pandas as pd
+            df = pd.DataFrame(historical_data)
+
+            # Ensure we have required columns
+            required_cols = ['date', 'open', 'high', 'low', 'close']
+            for col in required_cols:
+                if col not in df.columns:
+                    self.logger.error(f"Missing required column {col} for {crypto_id}")
+                    return None
+
+            analysis_df = self.technical_analyzer.calculate_indicators(
+                df, time_frame
+            )
+
+            if analysis_df is None or analysis_df.empty:
+                self.logger.error(f"Technical analysis failed for {crypto_id}")
+                return None
+
+            # Get summary
+            summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+
+            # Convert DataFrame to dict for JSON response
+            analysis_dict = analysis_df.to_dict('records')
+
+            # Get indicators summary
+            indicators_summary = self._get_indicators_summary(analysis_df)
+
+            analysis_result = {
+                'crypto_id': crypto_id,
+                'time_frame': time_frame,
+                'data_points': len(analysis_dict),
+                'analysis_data': analysis_dict[-100:],  # Last 100 points
+                'summary': summary,
+                'indicators_summary': indicators_summary
+            }
+
+            # Convert numpy types to Python types
+            return self._convert_numpy_types(analysis_result)
+
+        except Exception as e:
+            self.logger.error(f"Error in technical analysis for {crypto_id}: {e}")
+            import traceback
+            self.logger.error(traceback.format_exc())
+            return None
+
+    def _get_indicators_summary(self, df):
+        """Get summary of all indicators"""
+        if df.empty:
+            return {}
+
+        summary = {}
+        indicator_columns = [
+            'RSI', 'MACD', 'MACD_signal', 'STOCH_K', 'STOCH_D',
+            'ADX', 'CCI', 'SMA_20', 'SMA_50', 'SMA_200',
+            'EMA_12', 'EMA_26', 'WMA_20', 'BB_upper', 'BB_middle', 'BB_lower', 'VMA_20'
+        ]
+
+        for indicator in indicator_columns:
+            if indicator in df.columns:
+                # Get last valid value
+                last_value = df[indicator].dropna().iloc[-1] if not df[indicator].dropna().empty else None
+                if last_value is not None:
+                    # Convert to Python type using our converter
+                    converted_value = self._convert_numpy_types(last_value)
+
+                    summary[indicator] = {
+                        'value': round(converted_value, 4) if isinstance(converted_value,
+                                                                         (int, float)) else converted_value,
+                        'interpretation': self._interpret_indicator(indicator, converted_value)
+                    }
+
+        return summary
+
+    def _interpret_indicator(self, indicator, value):
+        """Interpret indicator values"""
+        if indicator == 'RSI':
+            if value < 30:
+                return f'Oversold ({value:.2f})'
+            elif value > 70:
+                return f'Overbought ({value:.2f})'
+            else:
+                return f'Neutral ({value:.2f})'
+        elif indicator == 'STOCH_K':
+            if value < 20:
+                return f'Oversold ({value:.2f})'
+            elif value > 80:
+                return f'Overbought ({value:.2f})'
+            else:
+                return f'Neutral ({value:.2f})'
+        elif indicator == 'ADX':
+            if value > 25:
+                return f'Strong Trend ({value:.2f})'
+            else:
+                return f'Weak Trend ({value:.2f})'
+        elif indicator == 'CCI':
+            if value > 100:
+                return f'Overbought ({value:.2f})'
+            elif value < -100:
+                return f'Oversold ({value:.2f})'
+            else:
+                return f'Neutral ({value:.2f})'
+        elif indicator == 'MACD':
+            if value > 0:
+                return f'Bullish ({value:.4f})'
+            else:
+                return f'Bearish ({value:.4f})'
+        elif indicator == 'MACD_signal':
+            return f'Signal Line ({value:.4f})'
+        elif 'SMA' in indicator or 'EMA' in indicator or 'WMA' in indicator:
+            return f'Moving Average ({value:.2f})'
+        elif 'BB_' in indicator:
+            if 'upper' in indicator:
+                return f'Upper Band ({value:.2f})'
+            elif 'lower' in indicator:
+                return f'Lower Band ({value:.2f})'
+            else:
+                return f'Middle Band ({value:.2f})'
+
+        return f'Value: {value}'
+
 
 # Flask Web Application
 app = Flask(__name__)
@@ -204,14 +377,14 @@ def load_initial_data():
             # Try to load existing data first
             symbols = processor.csv_manager.load_symbols()
             if symbols:
-                print(f" Loaded {len(symbols)} existing cryptocurrencies")
+                print(f"✓ Loaded {len(symbols)} existing cryptocurrencies")
                 data_loaded = True
                 return True
             else:
                 print("No existing data found. Running data collection pipeline...")
                 result = processor.run_pipe_and_filter()
                 if result['status'] == 'success':
-                    print(f" Data collection completed: {result['success_count']} cryptocurrencies")
+                    print(f"✓ Data collection completed: {result['success_count']} cryptocurrencies")
                     data_loaded = True
                     return True
                 else:
@@ -302,6 +475,86 @@ def get_crypto_details_api(crypto_id):
         return jsonify({'error': f'Error loading details: {str(e)}'})
 
 
+@app.route('/analysis/<crypto_id>')
+def analysis_page(crypto_id):
+    """Technical analysis page for a cryptocurrency"""
+    return render_template('analysis.html', crypto_id=crypto_id)
+
+
+@app.route('/api/analysis/<crypto_id>')
+def get_technical_analysis(crypto_id):
+    """Get technical analysis data for a cryptocurrency"""
+    try:
+        # Get analysis for all time frames
+        daily_analysis = processor.perform_technical_analysis(crypto_id, 'daily')
+        weekly_analysis = processor.perform_technical_analysis(crypto_id, 'weekly')
+        monthly_analysis = processor.perform_technical_analysis(crypto_id, 'monthly')
+
+        # Get crypto info
+        symbols = processor.get_all_cryptocurrencies()
+        crypto_info = next((c for c in symbols if c['id'] == crypto_id), None)
+
+        analysis_data = {
+            'crypto_info': processor._convert_numpy_types(crypto_info) if crypto_info else None,
+            'daily_analysis': daily_analysis,
+            'weekly_analysis': weekly_analysis,
+            'monthly_analysis': monthly_analysis,
+            'analysis_summary': {
+                'total_indicators': 10,
+                'oscillators': ['RSI', 'MACD', 'Stochastic', 'ADX', 'CCI'],
+                'moving_averages': ['SMA', 'EMA', 'WMA', 'Bollinger Bands', 'Volume MA']
+            },
+            'technical_analysis_available': TECHNICAL_ANALYSIS_AVAILABLE
+        }
+
+        return jsonify(processor._convert_numpy_types(analysis_data))
+
+    except Exception as e:
+        return jsonify({'error': f'Analysis error: {str(e)}'})
+
+
+@app.route('/api/analysis/top/<int:top_n>')
+def get_top_cryptos_analysis(top_n):
+    """Get top cryptocurrencies based on technical analysis"""
+    if not TECHNICAL_ANALYSIS_AVAILABLE:
+        return jsonify({'error': 'Technical analysis not available. Install pandas-ta.'})
+
+    try:
+        symbols = processor.get_all_cryptocurrencies()
+        analysis_data = {}
+
+        # Analyze top N cryptocurrencies
+        for crypto in symbols[:20]:  # Limit to 20 for performance
+            analysis = processor.perform_technical_analysis(crypto['id'], 'daily')
+            if analysis:
+                analysis_data[crypto['id']] = analysis
+
+        # Get top ranked cryptos using the analyzer's method if available
+        top_cryptos = []
+        if hasattr(processor.technical_analyzer, 'get_top_cryptocurrencies'):
+            top_cryptos = processor.technical_analyzer.get_top_cryptocurrencies(
+                symbols, analysis_data, top_n
+            )
+
+        # Add crypto info to results
+        for crypto in top_cryptos:
+            crypto_info = next((c for c in symbols if c['id'] == crypto['crypto_id']), None)
+            if crypto_info:
+                crypto.update({
+                    'symbol': crypto_info['symbol'],
+                    'name': crypto_info['name'],
+                    'market_cap_rank': crypto_info.get('market_cap_rank')
+                })
+
+        return jsonify(processor._convert_numpy_types({
+            'top_cryptos': top_cryptos,
+            'analysis_criteria': 'Based on technical indicators and buy/sell signals'
+        }))
+
+    except Exception as e:
+        return jsonify({'error': f'Top analysis error: {str(e)}'})
+
+
 @app.route('/api/cryptos')
 def get_all_cryptos():
     """API endpoint to get all cryptocurrencies (for debugging)"""
@@ -330,20 +583,29 @@ def status():
         'data_loaded': data_loaded,
         'symbols_count': symbols_count,
         'historical_files': historical_count,
-        'metrics_files': metrics_count
+        'metrics_files': metrics_count,
+        'technical_analysis_available': TECHNICAL_ANALYSIS_AVAILABLE
     })
 
 
 def display_startup_banner():
     """Display startup information"""
     print("\n" + "=" * 70)
-    print(" CRYPTO EXCHANGE ANALYZER - TECHNICAL PROTOTYPE")
+    print(" CRYPTO EXCHANGE ANALYZER - HOMEWORK 3")
     print("=" * 70)
-    print(" Web Interface for Cryptocurrency Data Search")
+    print(" Web Interface with Technical Analysis")
     print(" Features:")
     print("   • Search cryptocurrencies by symbol, name, or ID")
     print("   • View historical data and metrics")
-    print("   • Real-time search results")
+    print("   • Technical Analysis with 10 indicators")
+    print("   • Buy/Sell/Hold signals")
+    print("   • 3 Time Frames: Daily, Weekly, Monthly")
+
+    if TECHNICAL_ANALYSIS_AVAILABLE:
+        print("    Technical Analysis: ENABLED")
+    else:
+        print("     Technical Analysis: DISABLED (install pandas-ta)")
+
     print(" Server will start at: http://localhost:5000")
     print("=" * 70)
 
@@ -369,8 +631,13 @@ if __name__ == "__main__":
         print(f" Historical data files: {historical_files}")
         print(f" Metrics data files: {metrics_files}")
 
+        if TECHNICAL_ANALYSIS_AVAILABLE:
+            print(" Technical Analysis: READY")
+        else:
+            print("  Install for Technical Analysis: pip install pandas-ta numpy")
+
         print("\n Ready to search! Open http://localhost:5000 in your browser")
-        print("   Try searching for: 'BTC', 'ETH', 'bitcoin', 'ethereum'")
+        print("   Try: Search 'BTC' → Click 'Analyze' for Technical Analysis")
         print("=" * 70)
 
         # Start the web server

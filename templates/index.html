@@ -127,7 +127,6 @@
             border-radius: 10px;
             padding: 20px;
             transition: all 0.3s ease;
-            cursor: pointer;
         }
 
         .crypto-card:hover {
@@ -242,6 +241,50 @@
             text-align: center;
             font-size: 0.9em;
         }
+
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn-details {
+            flex: 1;
+            padding: 8px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-analyze {
+            flex: 1;
+            padding: 8px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-details:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .btn-analyze:hover {
+            background: #219653;
+            transform: translateY(-2px);
+        }
+
+        .btn-details:active, .btn-analyze:active {
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
@@ -298,11 +341,15 @@
 
             const statsBar = document.getElementById('statsBar');
             if (data.data_loaded) {
-                statsBar.innerHTML = `
-                     Available: ${data.symbols_count || 0} cryptocurrencies |
-                     Historical Data: ${data.historical_files || 0} files |
-                     Metrics: ${data.metrics_files || 0} files
-                `;
+                let statsText = ` Available: ${data.symbols_count || 0} cryptocurrencies |  Historical Data: ${data.historical_files || 0} files |  Metrics: ${data.metrics_files || 0} files`;
+
+                if (data.technical_analysis_available) {
+                    statsText += ` |  Technical Analysis: READY`;
+                } else {
+                    statsText += ` |  Technical Analysis: NOT AVAILABLE`;
+                }
+
+                statsBar.innerHTML = statsText;
             } else {
                 statsBar.innerHTML = ' Loading cryptocurrency data...';
             }
@@ -388,7 +435,7 @@
 
         results.forEach(crypto => {
             html += `
-                <div class="crypto-card" onclick="showCryptoDetails('${crypto.id}')">
+                <div class="crypto-card">
                     <div class="crypto-header">
                         <div>
                             <div class="crypto-symbol">${crypto.symbol}</div>
@@ -415,6 +462,15 @@
                     <div style="margin-top: 15px; font-size: 0.9em; color: #7f8c8d;">
                         Last updated: ${crypto.last_updated}
                     </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-details" onclick="showCryptoDetails('${crypto.id}')">
+                             Details
+                        </button>
+                        <button class="btn-analyze" onclick="showTechnicalAnalysis('${crypto.id}')">
+                             Analyze
+                        </button>
+                    </div>
                 </div>
             `;
         });
@@ -427,6 +483,28 @@
         // Navigate to details page
         window.location.href = '/crypto/' + cryptoId;
     }
+
+    function showTechnicalAnalysis(cryptoId) {
+        // Navigate to technical analysis page
+        window.location.href = '/analysis/' + cryptoId;
+    }
+
+    // Check if technical analysis is available
+    async function checkTechnicalAnalysis() {
+        try {
+            const response = await fetch('/status');
+            const data = await response.json();
+
+            if (!data.technical_analysis_available) {
+                console.log('Technical Analysis not available');
+            }
+        } catch (err) {
+            console.error('Error checking technical analysis:', err);
+        }
+    }
+
+    // Check on page load
+    checkTechnicalAnalysis();
 </script>
 </body>
 </html>
