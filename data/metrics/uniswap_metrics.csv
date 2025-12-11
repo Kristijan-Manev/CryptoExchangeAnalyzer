@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,6.22,368559287,6.4,6.11,3918625011,"['MEXC', 'BVOX', 'XT.COM', 'CoinUp.io', 'Coinbase Exchange']"
+2025-11-27,6.22,368559287.0,6.4,6.11,3918625011.0,"['MEXC', 'BVOX', 'XT.COM', 'CoinUp.io', 'Coinbase Exchange']"
+2025-12-06,5.58499757306273,18557737.0885016,5.60505744712426,5.41774902061054,5584997573.06273,

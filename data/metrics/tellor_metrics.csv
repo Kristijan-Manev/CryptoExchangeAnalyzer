@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,21.7,14774300,21.74,21.13,59553489,"['Bitvavo', 'XT.COM', 'Coinbase Exchange', 'Binance', 'Hotcoin']"
+2025-11-27,21.7,14774300.0,21.74,21.13,59553489.0,"['Bitvavo', 'XT.COM', 'Coinbase Exchange', 'Binance', 'Hotcoin']"
+2025-12-06,21.70566653160213,349563.775652997,22.08332857145277,20.1357966249017,61032787.82282993,

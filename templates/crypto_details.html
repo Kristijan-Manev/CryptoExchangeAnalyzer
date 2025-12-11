@@ -23,7 +23,7 @@
             margin: 0 auto;
             background: white;
             border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
 
@@ -40,7 +40,7 @@
             left: 20px;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             color: white;
             border: none;
             padding: 10px 20px;
@@ -51,7 +51,7 @@
         }
 
         .back-button:hover {
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .crypto-header {
@@ -95,7 +95,7 @@
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .data-table th,
@@ -174,119 +174,133 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <a href="/" class="back-button">← Back to Search</a>
-            <div>
-                <div class="crypto-header">
-                    <div class="crypto-symbol" id="cryptoSymbol">...</div>
-                    <div class="crypto-name" id="cryptoName">...</div>
-                </div>
-                <div id="cryptoPrice" style="font-size: 1.2em; opacity: 0.9;"></div>
+<div class="container">
+    <div class="header">
+        <a href="/" class="back-button">← Back to Search</a>
+        <div>
+            <div class="crypto-header">
+                <div class="crypto-symbol" id="cryptoSymbol">...</div>
+                <div class="crypto-name" id="cryptoName">...</div>
             </div>
-        </div>
-
-        <div class="content">
-            <div id="loading" class="loading">
-                 Loading cryptocurrency data...
-            </div>
-
-            <div id="error" class="error hidden"></div>
-
-            <div id="content" class="hidden">
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-value" id="historicalCount">0</div>
-                        <div class="stat-label">Historical Records</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value" id="metricsCount">0</div>
-                        <div class="stat-label">Metrics Records</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-value" id="marketCapRank">#0</div>
-                        <div class="stat-label">Market Cap Rank</div>
-                    </div>
-                </div>
-
-                <div class="data-section">
-                    <h3 class="section-title"> Historical Price Data</h3>
-                    <div id="historicalData">
-                        <div class="no-data">No historical data available</div>
-                    </div>
-                </div>
-
-                <div class="data-section">
-                    <h3 class="section-title"> Market Metrics</h3>
-                    <div id="metricsData">
-                        <div class="no-data">No metrics data available</div>
-                    </div>
-                </div>
-            </div>
+            <div id="cryptoPrice" style="font-size: 1.2em; opacity: 0.9;"></div>
         </div>
     </div>
 
-    <script>
-        const cryptoId = '{{ crypto_id }}';
+    <div class="content">
+        <div id="loading" class="loading">
+            Loading cryptocurrency data...
+        </div>
 
-        async function loadCryptoDetails() {
-            try {
-                const response = await fetch(`/api/crypto/${cryptoId}`);
-                const data = await response.json();
+        <div id="error" class="error hidden"></div>
 
-                if (data.error) {
-                    showError(data.error);
-                    return;
-                }
+        <!--<div id="content" class="hidden"> -->
+        <div id="content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="historicalCount">0</div>
+                    <div class="stat-label">Historical Records</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="metricsCount">0</div>
+                    <div class="stat-label">Metrics Records</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="marketCapRank">#0</div>
+                    <div class="stat-label">Market Cap Rank</div>
+                </div>
+            </div>
 
-                displayCryptoDetails(data);
+            <div class="data-section">
+                <h3 class="section-title"> Historical Price Data</h3>
+                <div id="historicalData">
+                    <div class="no-data">No historical data available</div>
+                </div>
+            </div>
 
-            } catch (err) {
-                showError('Network error: ' + err.message);
-            }
-        }
+            <div class="data-section">
+                <h3 class="section-title"> Market Metrics</h3>
+                <div id="metricsData">
+                    <div class="no-data">No metrics data available</div>
+                </div>
+            </div>
 
-        function displayCryptoDetails(data) {
-            const loading = document.getElementById('loading');
-            const content = document.getElementById('content');
-            const cryptoInfo = data.crypto_info;
+            <div class="data-section">
+                <h3 class="section-title"> LSTM Price Prediction </h3>
+                <button id="predictBtn" style="padding:10px 20px; margin-bottom:15px; cursor:pointer;">Predict Future
+                    Prices
+                </button>
+                <div id="predictionResults" class="no-data">Click "Predict" to generate future price predictions</div>
+                <canvas id="predictionChart" class="hidden"
+                        style="max-width:100%; height:300px; margin-top:20px;"></canvas>
 
-            // Update header
-            if (cryptoInfo) {
-                document.getElementById('cryptoSymbol').textContent = cryptoInfo.symbol;
-                document.getElementById('cryptoName').textContent = cryptoInfo.name;
-                document.getElementById('marketCapRank').textContent = '#' + (cryptoInfo.market_cap_rank || 'N/A');
+            </div>
 
-                if (cryptoInfo.current_price) {
-                    document.getElementById('cryptoPrice').textContent =
-                        `Current Price: $${cryptoInfo.current_price.toLocaleString()}`;
-                }
-            }
+        </div>
+    </div>
+</div>
 
-            // Update stats
-            document.getElementById('historicalCount').textContent = data.historical_data.length;
-            document.getElementById('metricsCount').textContent = data.metrics_data.length;
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const cryptoId = '{{ crypto_id }}';
 
-            // Display historical data
-            displayHistoricalData(data.historical_data);
+    async function loadCryptoDetails() {
+        try {
+            const response = await fetch(`/api/crypto/${cryptoId}`);
+            const data = await response.json();
 
-            // Display metrics data
-            displayMetricsData(data.metrics_data);
-
-            // Show content
-            loading.classList.add('hidden');
-            content.classList.remove('hidden');
-        }
-
-        function displayHistoricalData(historicalData) {
-            const container = document.getElementById('historicalData');
-
-            if (!historicalData || historicalData.length === 0) {
-                container.innerHTML = '<div class="no-data">No historical data available</div>';
+            if (data.error) {
+                showError(data.error);
                 return;
             }
 
-            let html = `
+            displayCryptoDetails(data);
+
+        } catch (err) {
+            showError('Network error: ' + err.message);
+        }
+    }
+
+    function displayCryptoDetails(data) {
+        const loading = document.getElementById('loading');
+        const content = document.getElementById('content');
+        const cryptoInfo = data.crypto_info;
+
+        // Update header
+        if (cryptoInfo) {
+            document.getElementById('cryptoSymbol').textContent = cryptoInfo.symbol;
+            document.getElementById('cryptoName').textContent = cryptoInfo.name;
+            document.getElementById('marketCapRank').textContent = '#' + (cryptoInfo.market_cap_rank || 'N/A');
+
+            if (cryptoInfo.current_price) {
+                document.getElementById('cryptoPrice').textContent =
+                    `Current Price: $${cryptoInfo.current_price.toLocaleString()}`;
+            }
+        }
+
+        // Update stats
+        document.getElementById('historicalCount').textContent = data.historical_data.length;
+        document.getElementById('metricsCount').textContent = data.metrics_data.length;
+
+        // Display historical data
+        displayHistoricalData(data.historical_data);
+
+        // Display metrics data
+        displayMetricsData(data.metrics_data);
+
+        // Show content
+        loading.classList.add('hidden');
+        content.classList.remove('hidden');
+    }
+
+    function displayHistoricalData(historicalData) {
+        const container = document.getElementById('historicalData');
+
+        if (!historicalData || historicalData.length === 0) {
+            container.innerHTML = '<div class="no-data">No historical data available</div>';
+            return;
+        }
+
+        let html = `
                 <div style="margin-bottom: 10px; color: #7f8c8d;">
                     Showing ${Math.min(historicalData.length, 50)} of ${historicalData.length} records
                 </div>
@@ -304,11 +318,11 @@
                     <tbody>
             `;
 
-            // Show latest 50 records
-            const displayData = historicalData.slice(-50).reverse();
+        // Show latest 50 records
+        const displayData = historicalData.slice(-50).reverse();
 
-            displayData.forEach(record => {
-                html += `
+        displayData.forEach(record => {
+            html += `
                     <tr>
                         <td>${record.date || 'N/A'}</td>
                         <td>${formatNumber(record.open)}</td>
@@ -318,21 +332,21 @@
                         <td>${formatNumber(record.volume)}</td>
                     </tr>
                 `;
-            });
+        });
 
-            html += '</tbody></table>';
-            container.innerHTML = html;
+        html += '</tbody></table>';
+        container.innerHTML = html;
+    }
+
+    function displayMetricsData(metricsData) {
+        const container = document.getElementById('metricsData');
+
+        if (!metricsData || metricsData.length === 0) {
+            container.innerHTML = '<div class="no-data">No metrics data available</div>';
+            return;
         }
 
-        function displayMetricsData(metricsData) {
-            const container = document.getElementById('metricsData');
-
-            if (!metricsData || metricsData.length === 0) {
-                container.innerHTML = '<div class="no-data">No metrics data available</div>';
-                return;
-            }
-
-            let html = `
+        let html = `
                 <div style="margin-bottom: 10px; color: #7f8c8d;">
                     Showing ${Math.min(metricsData.length, 20)} of ${metricsData.length} records
                 </div>
@@ -350,11 +364,11 @@
                     <tbody>
             `;
 
-            // Show latest 20 records
-            const displayData = metricsData.slice(-20).reverse();
+        // Show latest 20 records
+        const displayData = metricsData.slice(-20).reverse();
 
-            displayData.forEach(record => {
-                html += `
+        displayData.forEach(record => {
+            html += `
                     <tr>
                         <td>${record.date || 'N/A'}</td>
                         <td>${formatNumber(record.price)}</td>
@@ -364,34 +378,105 @@
                         <td>${formatNumber(record.market_cap)}</td>
                     </tr>
                 `;
-            });
+        });
 
-            html += '</tbody></table>';
-            container.innerHTML = html;
+        html += '</tbody></table>';
+        container.innerHTML = html;
+    }
+
+    function formatNumber(value) {
+        if (value === null || value === undefined || value === 'N/A') return 'N/A';
+        if (typeof value === 'number') {
+            if (value === 0) return '0';
+            if (value < 1) return value.toFixed(6);
+            if (value < 1000) return value.toFixed(2);
+            return value.toLocaleString(undefined, {maximumFractionDigits: 2});
         }
+        return value;
+    }
 
-        function formatNumber(value) {
-            if (value === null || value === undefined || value === 'N/A') return 'N/A';
-            if (typeof value === 'number') {
-                if (value === 0) return '0';
-                if (value < 1) return value.toFixed(6);
-                if (value < 1000) return value.toFixed(2);
-                return value.toLocaleString(undefined, {maximumFractionDigits: 2});
+    function showError(message) {
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+
+        loading.classList.add('hidden');
+        error.textContent = message;
+        error.classList.remove('hidden');
+    }
+
+    // Load data when page opens
+    document.addEventListener('DOMContentLoaded', loadCryptoDetails);
+    document.addEventListener('DOMContentLoaded', () => {
+        const predictBtn = document.getElementById('predictBtn');
+        const resultsContainer = document.getElementById('predictionResults');
+        const chartCanvas = document.getElementById('predictionChart');
+        let predictionChart = null; // Keep reference to destroy old chart
+
+        predictBtn.addEventListener('click', async () => {
+            resultsContainer.textContent = 'Predicting...';
+            chartCanvas.classList.add('hidden'); // Hide chart until loaded
+
+            try {
+                const response = await fetch(`/api/predict/${cryptoId}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    resultsContainer.textContent = 'Error: ' + data.error;
+                    return;
+                }
+
+                const prices = data.future_prices.map(p => Number(p.toFixed(2)));
+                const metrics = data.metrics;
+
+                // Display metrics text
+                resultsContainer.innerHTML = `
+                <div><strong>RMSE:</strong> ${metrics.RMSE.toFixed(2)},
+                     <strong>MAPE:</strong> ${(metrics.MAPE * 100).toFixed(2)}%,
+                     <strong>R²:</strong> ${metrics.R2.toFixed(2)}</div>
+            `;
+
+                // Prepare chart labels (next 7 days)
+                const labels = prices.map((_, i) => `Day ${i + 1}`);
+
+                // Destroy previous chart if exists
+                if (predictionChart) predictionChart.destroy();
+
+                // Create new chart
+                predictionChart = new Chart(chartCanvas, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Predicted Price ($)',
+                            data: prices,
+                            borderColor: '#3498db',
+                            backgroundColor: 'rgba(52, 152, 219, 0.2)',
+                            tension: 0.3,
+                            fill: true,
+                            pointRadius: 5,
+                            pointBackgroundColor: '#2980b9'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {display: true},
+                            tooltip: {mode: 'index', intersect: false}
+                        },
+                        scales: {
+                            y: {beginAtZero: false},
+                            x: {title: {display: true, text: 'Day'}}
+                        }
+                    }
+                });
+
+                chartCanvas.classList.remove('hidden'); // Show chart
+
+            } catch (err) {
+                resultsContainer.textContent = 'Network error: ' + err.message;
             }
-            return value;
-        }
-
-        function showError(message) {
-            const loading = document.getElementById('loading');
-            const error = document.getElementById('error');
-
-            loading.classList.add('hidden');
-            error.textContent = message;
-            error.classList.remove('hidden');
-        }
-
-        // Load data when page opens
-        document.addEventListener('DOMContentLoaded', loadCryptoDetails);
-    </script>
+        });
+    });
+</script>
 </body>
 </html>

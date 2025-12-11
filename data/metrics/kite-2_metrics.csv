@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,0.10845,88962439,0.115777,0.105883,195774561,"['OrangeX', 'Gate', 'Binance', 'Pancakeswap Infinity CLMM (BSC)', 'LBank']"
+2025-11-27,0.10845,88962439.0,0.115777,0.105883,195774561.0,"['OrangeX', 'Gate', 'Binance', 'Pancakeswap Infinity CLMM (BSC)', 'LBank']"
+2025-12-06,0.09191739696708513,357227546.268055,0.09494031331524946,0.08940808880402625,896803914.9132005,

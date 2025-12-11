@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,3.16,1866251,3.21,3.08,181528520,"['CoinEx', 'XT.COM', 'Sushiswap', 'CoinUp.io', 'Uniswap V4 (Ethereum)']"
+2025-11-27,3.16,1866251.0,3.21,3.08,181528520.0,"['CoinEx', 'XT.COM', 'Sushiswap', 'CoinUp.io', 'Uniswap V4 (Ethereum)']"
+2025-12-06,2.619294632152325,1329260.71757408,2.836904599241864,2.424819374879665,150609441.3487587,

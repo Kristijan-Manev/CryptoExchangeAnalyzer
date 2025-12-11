@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,4.7,4379082,4.72,4.57,219514830,"['MEXC', 'BVOX', 'Ourbit', 'Binance', 'PancakeSwap V3 (BSC)']"
+2025-11-27,4.7,4379082.0,4.72,4.57,219514830.0,"['MEXC', 'BVOX', 'Ourbit', 'Binance', 'PancakeSwap V3 (BSC)']"
+2025-12-06,3.884487076349773,314076.785370352,3.921742154795061,3.802653494280559,374870868.92937195,

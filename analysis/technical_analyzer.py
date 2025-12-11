@@ -12,44 +12,56 @@ class TechnicalAnalyzer:
     def calculate_indicators(self, historical_data, time_frame='daily'):
         """
         Calculate technical indicators for cryptocurrency data
-        Args:
-            historical_data: List of dicts or DataFrame with OHLCV data
-            time_frame: 'daily', 'weekly', or 'monthly'
-        Returns:
-            DataFrame with indicators
         """
+        # 1️⃣ Convert input to DataFrame
         if isinstance(historical_data, list):
             df = pd.DataFrame(historical_data)
         else:
             df = historical_data.copy()
 
-        # Convert date column to datetime
+        # 2️⃣ Convert date column to datetime and sort
         if 'date' in df.columns:
             df['date'] = pd.to_datetime(df['date'])
             df = df.sort_values('date')
 
-        # Ensure numeric columns
+        # 3️⃣ Ensure numeric columns
         numeric_cols = ['open', 'high', 'low', 'close', 'volume']
         for col in numeric_cols:
             if col in df.columns:
                 df[col] = pd.to_numeric(df[col], errors='coerce')
 
-        # Remove NaN values
+        # 4️⃣ Drop invalid rows
         df = df.dropna(subset=['close'])
 
-        if len(df) < 50:  # Need enough data for indicators
-            self.logger.warning(f"Insufficient data points: {len(df)}")
+        # 5️⃣ Resample based on timeframe BEFORE indicator calculation
+        if time_frame == 'weekly':
+            df = df.resample('W', on='date').agg({
+                'open': 'first',
+                'high': 'max',
+                'low': 'min',
+                'close': 'last',
+                'volume': 'sum'
+            }).dropna().reset_index()
+
+        elif time_frame == 'monthly':
+            df = df.resample('M', on='date').agg({
+                'open': 'first',
+                'high': 'max',
+                'low': 'min',
+                'close': 'last',
+                'volume': 'sum'
+            }).dropna().reset_index()
+
+        # 6️⃣ If too few points, stop early
+        if len(df) < 50:
+            self.logger.warning(f"Insufficient data points for {time_frame}: {len(df)}")
             return df
 
-        # Calculate all indicators
+        # 7️⃣ Calculate all indicators
         df = self._calculate_all_indicators(df)
 
-        # Generate trading signals
+        # 8️⃣ Generate signals
         df = self._generate_signals(df)
-
-        # Time frame resampling if needed
-        if time_frame != 'daily':
-            df = self._resample_time_frame(df, time_frame)
 
         return df
 

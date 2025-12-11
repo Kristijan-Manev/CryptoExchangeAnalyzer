@@ -15,10 +15,14 @@ from filters.data_fill_filter import DataFillFilter
 # Import Technical Analysis module
 try:
     from analysis.technical_analyzer import TechnicalAnalyzer
-
     TECHNICAL_ANALYSIS_AVAILABLE = True
+
+    from analysis.lstm_predictor import LSTMPredictor
+
+    LSTM_AVAILABLE = True
 except ImportError:
     TECHNICAL_ANALYSIS_AVAILABLE = False
+    LSTM_AVAILABLE = False
     print("⚠️  Technical Analysis module not found. Run: pip install pandas-ta numpy")
 
 
@@ -248,6 +252,12 @@ class CryptoExchangeProcessor:
                 if col not in df.columns:
                     self.logger.error(f"Missing required column {col} for {crypto_id}")
                     return None
+
+            # Drop rows with all zero prices
+            df = df[(df[['open', 'high', 'low', 'close']] != 0).any(axis=1)]
+
+            # Drop NaN values if any
+            df = df.dropna(subset=['open', 'high', 'low', 'close'])
 
             analysis_df = self.technical_analyzer.calculate_indicators(
                 df, time_frame
@@ -587,6 +597,31 @@ def status():
         'technical_analysis_available': TECHNICAL_ANALYSIS_AVAILABLE
     })
 
+@app.route('/api/predict/<crypto_id>')
+def lstm_predict(crypto_id):
+    if not LSTM_AVAILABLE:
+        return jsonify({'error': 'LSTM not available. Install TensorFlow.'})
+
+    try:
+        historical_data = processor._get_crypto_historical_data(crypto_id)
+        if not historical_data or len(historical_data) < 100:
+            return jsonify({'error': 'Not enough data to train LSTM'})
+
+        predictor = LSTMPredictor(lookback=30)
+        results = predictor.train_and_predict(historical_data)
+
+        return jsonify({
+            'crypto_id': crypto_id,
+            'metrics': {
+                'RMSE': results['rmse'],
+                'MAPE': results['mape'],
+                'R2': results['r2']
+            },
+            'future_prices': results['future_predictions']
+        })
+
+    except Exception as e:
+        return jsonify({'error': str(e)})
 
 def display_startup_banner():
     """Display startup information"""
