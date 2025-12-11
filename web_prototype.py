@@ -15,15 +15,20 @@ from filters.data_fill_filter import DataFillFilter
 # Import Technical Analysis module
 try:
     from analysis.technical_analyzer import TechnicalAnalyzer
+
     TECHNICAL_ANALYSIS_AVAILABLE = True
-
     from analysis.lstm_predictor import LSTMPredictor
+    from analysis.onchain_sentiment_analyzer import OnChainSentimentAnalyzer
 
+    ONCHAIN_AVAILABLE = True
+    sentiment_analyzer = OnChainSentimentAnalyzer()
     LSTM_AVAILABLE = True
 except ImportError:
     TECHNICAL_ANALYSIS_AVAILABLE = False
     LSTM_AVAILABLE = False
     print("⚠️  Technical Analysis module not found. Run: pip install pandas-ta numpy")
+    ONCHAIN_AVAILABLE = False
+    sentiment_analyzer = None
 
 
 class CryptoExchangeProcessor:
@@ -564,7 +569,6 @@ def get_top_cryptos_analysis(top_n):
     except Exception as e:
         return jsonify({'error': f'Top analysis error: {str(e)}'})
 
-
 @app.route('/api/cryptos')
 def get_all_cryptos():
     """API endpoint to get all cryptocurrencies (for debugging)"""
@@ -597,6 +601,7 @@ def status():
         'technical_analysis_available': TECHNICAL_ANALYSIS_AVAILABLE
     })
 
+
 @app.route('/api/predict/<crypto_id>')
 def lstm_predict(crypto_id):
     if not LSTM_AVAILABLE:
@@ -620,6 +625,16 @@ def lstm_predict(crypto_id):
             'future_prices': results['future_predictions']
         })
 
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
+@app.route('/api/onchain_sentiment/<crypto_id>')
+def onchain_sentiment(crypto_id):
+    if not ONCHAIN_AVAILABLE or not sentiment_analyzer:
+        return jsonify({'error': 'On-Chain/Sentiment analysis not available.'})
+    try:
+        result = sentiment_analyzer.analyze(crypto_id)
+        return jsonify(result)
     except Exception as e:
         return jsonify({'error': str(e)})
 

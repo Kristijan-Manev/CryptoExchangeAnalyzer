@@ -232,9 +232,14 @@
                 <div id="predictionResults" class="no-data">Click "Predict" to generate future price predictions</div>
                 <canvas id="predictionChart" class="hidden"
                         style="max-width:100%; height:300px; margin-top:20px;"></canvas>
-
             </div>
-
+            <div class="data-section">
+                <h3 class="section-title">On-Chain & Sentiment Analysis</h3>
+                <button id="sentimentBtn" style="padding:10px 20px; margin-bottom:15px; cursor:pointer;">
+                    Analyze On-Chain & Sentiment
+                </button>
+                <div id="sentimentResults" class="no-data">Click "Analyze" to view sentiment and on-chain metrics</div>
+            </div>
         </div>
     </div>
 </div>
@@ -477,6 +482,66 @@
             }
         });
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const sentimentBtn = document.getElementById('sentimentBtn');
+        const sentimentResults = document.getElementById('sentimentResults');
+
+        sentimentBtn.addEventListener('click', async () => {
+            sentimentResults.textContent = 'Analyzing...';
+
+            try {
+                const response = await fetch(`/api/onchain_sentiment/${cryptoId}`);
+                const data = await response.json();
+
+                if (data.error) {
+                    sentimentResults.textContent = 'Error: ' + data.error;
+                    return;
+                }
+
+                const metrics = data.onchain_metrics;
+                const sentiment = data.sentiment_label;
+                const avg = data.average_sentiment;
+
+                let sentimentColor;
+                if (sentiment === "Positive") sentimentColor = "green";
+                else if (sentiment === "Negative") sentimentColor = "red";
+                else sentimentColor = "gray";
+
+// Convert polarity (-1..1) → percentage (0..100)
+                const sentimentPercent = ((avg + 1) / 2) * 100;
+
+                sentimentResults.innerHTML = `
+    <div style="font-size:1.2em; margin-bottom:10px;">
+        <strong>Sentiment:</strong>
+        <span style="color:${sentimentColor}; font-weight:bold;">${sentiment}</span>
+        (${avg})
+    </div>
+
+    <!-- Sentiment Gauge -->
+    <div style="background:#eee; border-radius:10px; height:12px; margin-bottom:20px;">
+        <div style="width:${sentimentPercent}%; height:100%; background:${sentimentColor}; border-radius:10px;"></div>
+    </div>
+
+    <!-- On-Chain Metrics Table -->
+    <table class="data-table" style="width:auto;">
+        <tr><td><strong>Active Addresses</strong></td><td>${metrics.active_addresses.toLocaleString()}</td></tr>
+        <tr><td><strong>Transactions</strong></td><td>${metrics.transactions.toLocaleString()}</td></tr>
+        <tr><td><strong>Exchange Inflows</strong></td><td>${metrics.exchange_inflows.toFixed(2)}M</td></tr>
+        <tr><td><strong>Exchange Outflows</strong></td><td>${metrics.exchange_outflows.toFixed(2)}M</td></tr>
+        <tr><td><strong>Whale Transactions</strong></td><td>${metrics.whale_transactions}</td></tr>
+        <tr><td><strong>Hash Rate</strong></td><td>${metrics.hash_rate.toFixed(2)} TH/s</td></tr>
+        <tr><td><strong>TVL</strong></td><td>$${metrics.tvl.toLocaleString()}</td></tr>
+        <tr><td><strong>NVT Ratio</strong></td><td>${metrics.nvt_ratio}</td></tr>
+        <tr><td><strong>MVRV Ratio</strong></td><td>${metrics.mvrv_ratio}</td></tr>
+    </table>
+`;
+            } catch (err) {
+                sentimentResults.textContent = 'Network error: ' + err.message;
+            }
+        });
+    });
+
 </script>
 </body>
 </html>

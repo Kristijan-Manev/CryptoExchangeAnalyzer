@@ -13874,3 +13874,87 @@ KeyError: 'signal'
 2025-12-11 14:59:38,573 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 14:59:38] "GET /crypto/ethereum-classic HTTP/1.1" 200 -
 2025-12-11 14:59:38,733 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 14:59:38] "GET /api/crypto/ethereum-classic HTTP/1.1" 200 -
 2025-12-11 15:01:31,933 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:01:31] "GET /api/predict/ethereum-classic HTTP/1.1" 200 -
+2025-12-11 15:20:25,441 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.14:5000
+2025-12-11 15:20:25,441 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-11 15:20:25,443 - werkzeug - INFO -  * Restarting with stat
+2025-12-11 15:20:30,820 - werkzeug - WARNING -  * Debugger is active!
+2025-12-11 15:20:30,822 - werkzeug - INFO -  * Debugger PIN: 127-660-033
+2025-12-11 15:20:37,667 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:20:37] "GET / HTTP/1.1" 200 -
+2025-12-11 15:20:37,756 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:20:37] "GET /status HTTP/1.1" 200 -
+2025-12-11 15:20:37,929 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:20:37] "GET /status HTTP/1.1" 200 -
+2025-12-11 15:20:41,772 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:20:41] "POST /search HTTP/1.1" 200 -
+2025-12-11 15:20:43,521 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:20:43] "GET /analysis/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:21:00,425 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:21:00] "GET /api/analysis/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:21:05,789 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:21:05] "GET /crypto/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:21:05,968 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:21:05] "GET /api/crypto/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:21:09,004 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:21:09] "GET /api/onchain_sentiment/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:24:52,401 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.20.10.14:5000
+2025-12-11 15:24:52,402 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-11 15:24:52,403 - werkzeug - INFO -  * Restarting with stat
+2025-12-11 15:24:57,447 - werkzeug - WARNING -  * Debugger is active!
+2025-12-11 15:24:57,450 - werkzeug - INFO -  * Debugger PIN: 127-660-033
+2025-12-11 15:25:03,599 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:25:03] "GET / HTTP/1.1" 200 -
+2025-12-11 15:25:03,681 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:25:03] "GET /status HTTP/1.1" 200 -
+2025-12-11 15:25:03,846 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:25:03] "GET /status HTTP/1.1" 200 -
+2025-12-11 15:25:07,659 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:25:07] "POST /search HTTP/1.1" 200 -
+2025-12-11 15:25:09,181 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:25:09] "GET /crypto/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:25:09,551 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:25:09] "GET /api/crypto/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:25:13,793 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:25:13] "GET /api/onchain_sentiment/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:26:11,783 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:26:11] "POST /search HTTP/1.1" 200 -
+2025-12-11 15:26:13,489 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:26:13] "GET /analysis/ethereum-classic HTTP/1.1" 200 -
+2025-12-11 15:26:38,320 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:26:38] "GET /api/analysis/ethereum-classic HTTP/1.1" 200 -
+2025-12-11 15:26:48,897 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:26:48] "GET /crypto/ethereum-classic HTTP/1.1" 200 -
+2025-12-11 15:26:49,423 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:26:49] "GET /api/crypto/ethereum-classic HTTP/1.1" 200 -
+2025-12-11 15:26:53,251 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:26:53] "GET /api/onchain_sentiment/ethereum-classic HTTP/1.1" 200 -
+2025-12-11 15:27:09,463 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:27:09] "GET /api/predict/binancecoin HTTP/1.1" 200 -
+2025-12-11 15:28:31,758 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:31] "GET /crypto/ethereum HTTP/1.1" 200 -
+2025-12-11 15:28:32,173 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:32] "GET /api/crypto/ethereum HTTP/1.1" 200 -
+2025-12-11 15:28:34,019 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:34] "GET /api/predict/ethereum-classic HTTP/1.1" 200 -
+2025-12-11 15:28:36,315 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:36] "GET /api/onchain_sentiment/ethereum HTTP/1.1" 200 -
+2025-12-11 15:28:37,582 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:37] "GET /api/predict/ethereum HTTP/1.1" 200 -
+2025-12-11 15:28:53,131 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:53] "GET /crypto/liquid-staked-ethereum HTTP/1.1" 200 -
+2025-12-11 15:28:53,289 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:53] "GET /api/crypto/liquid-staked-ethereum HTTP/1.1" 200 -
+2025-12-11 15:28:56,262 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:28:56] "GET /api/onchain_sentiment/liquid-staked-ethereum HTTP/1.1" 200 -
+2025-12-11 15:29:17,215 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:29:17] "GET /crypto/liquid-staked-ethereum HTTP/1.1" 200 -
+2025-12-11 15:29:17,370 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:29:17] "GET /api/crypto/liquid-staked-ethereum HTTP/1.1" 200 -
+2025-12-11 15:29:19,973 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:29:19] "GET /api/onchain_sentiment/liquid-staked-ethereum HTTP/1.1" 200 -
+2025-12-11 15:30:58,248 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:30:58] "POST /search HTTP/1.1" 200 -
+2025-12-11 15:31:02,633 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:31:02] "GET /analysis/ethereum-pow-iou HTTP/1.1" 200 -
+2025-12-11 15:31:07,084 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:31:07] "GET /crypto/ethereum-pow-iou HTTP/1.1" 200 -
+2025-12-11 15:31:08,125 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:31:08] "GET /api/crypto/ethereum-pow-iou HTTP/1.1" 200 -
+2025-12-11 15:31:11,988 - analysis.technical_analyzer - WARNING - Insufficient data points for monthly: 40
+2025-12-11 15:31:11,988 - __main__ - ERROR - Error in technical analysis for ethereum-pow-iou: 'signal'
+2025-12-11 15:31:12,004 - __main__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Media\PycharmProjects\DAS_domasni\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'signal'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Media\PycharmProjects\DAS_domasni\web_prototype.py", line 276, in perform_technical_analysis
+    summary = self.technical_analyzer.get_analysis_summary(analysis_df)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Media\PycharmProjects\DAS_domasni\analysis\technical_analyzer.py", line 307, in get_analysis_summary
+    'buy_signals': (df['signal'] == 'BUY').sum(),
+                    ~~^^^^^^^^^^
+  File "C:\Users\Media\PycharmProjects\DAS_domasni\.venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Media\PycharmProjects\DAS_domasni\.venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'signal'
+
+2025-12-11 15:31:12,099 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:31:12] "GET /api/analysis/ethereum-pow-iou HTTP/1.1" 200 -
+2025-12-11 15:31:30,905 - werkzeug - INFO - 127.0.0.1 - - [11/Dec/2025 15:31:30] "GET /api/onchain_sentiment/ethereum-pow-iou HTTP/1.1" 200 -
