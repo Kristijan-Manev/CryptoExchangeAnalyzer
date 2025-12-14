@@ -7,6 +7,7 @@ from tensorflow.keras.layers import LSTM, Dense
 from tensorflow.keras.optimizers import Adam
 import math
 
+
 class LSTMPredictor:
     def __init__(self, lookback=30):
         self.lookback = lookback

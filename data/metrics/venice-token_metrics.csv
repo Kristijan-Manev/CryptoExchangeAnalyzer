@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,1.077,1541686,1.098,1.07,43991033,"['MEXC', 'BitKan', 'Gate', 'KCEX', 'Coinbase Exchange']"
+2025-11-27,1.077,1541686.0,1.098,1.07,43991033.0,"['MEXC', 'BitKan', 'Gate', 'KCEX', 'Coinbase Exchange']"
+2025-12-13,1.06989101522158,398545.656806826,1.10999999844903,1.05997518333549,82688081.9653835,

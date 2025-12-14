@@ -57,7 +57,7 @@ class DataFillFilter:
             params = {
                 "fsym": symbol.upper(),
                 "tsym": "USD",
-                "limit": 3500
+                "limit": 2300
             }
 
             response = requests.get(url, params=params, timeout=30)

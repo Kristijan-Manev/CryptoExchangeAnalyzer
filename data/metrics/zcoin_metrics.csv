@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,2.62,859371,2.87,2.62,47149130,"['MEXC', 'CoinEx', 'Nonkyc.io', 'Komodo Wallet', 'AscendEX (BitMax)']"
+2025-11-27,2.62,859371.0,2.87,2.62,47149130.0,"['MEXC', 'CoinEx', 'Nonkyc.io', 'Komodo Wallet', 'AscendEX (BitMax)']"
+2025-12-13,1.722884557828098,144657.21112802,1.897949116657043,1.668041699123695,28274074.63708326,

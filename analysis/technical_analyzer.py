@@ -13,27 +13,27 @@ class TechnicalAnalyzer:
         """
         Calculate technical indicators for cryptocurrency data
         """
-        # 1️⃣ Convert input to DataFrame
+        # Convert input to DataFrame
         if isinstance(historical_data, list):
             df = pd.DataFrame(historical_data)
         else:
             df = historical_data.copy()
 
-        # 2️⃣ Convert date column to datetime and sort
+        # Convert date column to datetime and sort
         if 'date' in df.columns:
             df['date'] = pd.to_datetime(df['date'])
             df = df.sort_values('date')
 
-        # 3️⃣ Ensure numeric columns
+        # Ensure numeric columns
         numeric_cols = ['open', 'high', 'low', 'close', 'volume']
         for col in numeric_cols:
             if col in df.columns:
                 df[col] = pd.to_numeric(df[col], errors='coerce')
 
-        # 4️⃣ Drop invalid rows
+        # Drop invalid rows
         df = df.dropna(subset=['close'])
 
-        # 5️⃣ Resample based on timeframe BEFORE indicator calculation
+        # Resample based on timeframe BEFORE indicator calculation
         if time_frame == 'weekly':
             df = df.resample('W', on='date').agg({
                 'open': 'first',
@@ -52,15 +52,15 @@ class TechnicalAnalyzer:
                 'volume': 'sum'
             }).dropna().reset_index()
 
-        # 6️⃣ If too few points, stop early
+        #  If too few points, stop early
         if len(df) < 50:
             self.logger.warning(f"Insufficient data points for {time_frame}: {len(df)}")
             return df
 
-        # 7️⃣ Calculate all indicators
+        # Calculate all indicators
         df = self._calculate_all_indicators(df)
 
-        # 8️⃣ Generate signals
+        #  Generate signals
         df = self._generate_signals(df)
 
         return df

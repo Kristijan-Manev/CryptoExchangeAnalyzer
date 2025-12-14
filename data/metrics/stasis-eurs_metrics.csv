@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,1.19,63874,1.19,1.14,147148914,"['Uniswap V3 (Polygon)', 'Curve (Ethereum)', 'Curve (Polygon)']"
+2025-11-27,1.19,63874.0,1.19,1.14,147148914.0,"['Uniswap V3 (Polygon)', 'Curve (Ethereum)', 'Curve (Polygon)']"
+2025-12-13,1.120237901843368,512.48,1.120397584984787,1.120091424959551,139050582.58993578,

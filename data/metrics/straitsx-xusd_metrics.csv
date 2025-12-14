@@ -1,2 +1,3 @@
 date,price,volume_24h,high_24h,low_24h,market_cap,exchanges
-2025-11-27,0.99996,20126907,1.0,0.999771,40594763,"['MEXC', 'Nami Exchange', 'BingX', 'Binance', 'TokoCrypto']"
+2025-11-27,0.99996,20126907.0,1.0,0.999771,40594763.0,"['MEXC', 'Nami Exchange', 'BingX', 'Binance', 'TokoCrypto']"
+2025-12-13,0.9999968621705619,5061818.63,1.000464939391688,0.9999128912681121,43096159.2221786,
