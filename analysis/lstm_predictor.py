@@ -75,7 +75,6 @@ class LSTMPredictor:
             pred = model.predict(seq.reshape(1, self.lookback, X_train.shape[2]), verbose=0)
             future_preds.append(pred[0, 0])
 
-            # Shift and append new features; for simplicity, keep other features as last row
             new_row = seq[-1].copy()
             new_row[3] = pred  # update 'Close'
             seq = np.vstack([seq[1:], new_row])

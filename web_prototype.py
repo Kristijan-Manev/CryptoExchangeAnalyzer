@@ -661,7 +661,6 @@ def display_startup_banner():
 
 
 if __name__ == "__main__":
-    # Display startup banner
     display_startup_banner()
 
     # Load initial data
