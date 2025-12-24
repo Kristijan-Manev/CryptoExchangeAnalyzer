@@ -17122,3 +17122,24 @@ KeyError: 'signal'
 2025-12-24 14:00:21,288 - utils.csv_manager - INFO - Saved 1 metrics records for ethereum
 2025-12-24 14:00:28,289 - filters.data_fill_filter - INFO - Processing binancecoin - BNB
 2025-12-24 14:00:30,556 - utils.timer - INFO - Complete Crypto Exchange Data Pipeline completed in 40.10 seconds
+2025-12-24 14:21:37,722 - __main__ - INFO - Starting Crypto Exchange Analyzer - Pipe and Filter Architecture
+2025-12-24 14:21:37,722 - utils.timer - INFO - Starting Complete Crypto Exchange Data Pipeline...
+2025-12-24 14:21:37,723 - __main__ - INFO - FILTER 1: Downloading and validating cryptocurrency symbols
+2025-12-24 14:21:37,723 - filters.symbol_filter - INFO - Starting symbol filter: Fetching top cryptocurrencies
+2025-12-24 14:21:37,728 - filters.strategies.symbol_strategy - INFO - Fetching cryptocurrency symbols from CoinGecko
+2025-12-24 14:21:43,834 - filters.strategies.symbol_strategy - INFO - Fetched 1000 total symbols from CoinGecko.
+2025-12-24 14:21:43,853 - utils.csv_manager - INFO - Saved 809 symbols to data\symbols\crypto_symbols_20251224_142143.csv
+2025-12-24 14:21:43,853 - filters.symbol_filter - INFO - Symbol filter completed: Found 809 valid cryptocurrencies
+2025-12-24 14:21:43,854 - __main__ - INFO - FILTER 1 COMPLETED: 809 valid symbols retrieved
+2025-12-24 14:21:43,854 - __main__ - INFO - FILTER 2: Checking existing data dates and update requirements
+2025-12-24 14:21:43,854 - filters.date_check_filter - INFO - Starting date check filter
+2025-12-24 14:21:44,850 - filters.date_check_filter - INFO - Date check completed: 807/809 need updates
+2025-12-24 14:21:44,851 - __main__ - INFO - FILTER 2 COMPLETED: 807/809 require updates
+2025-12-24 14:21:44,851 - __main__ - INFO - FILTER 3: Downloading and processing missing exchange data
+2025-12-24 14:21:44,851 - filters.data_fill_filter - INFO - Starting data fill filter
+2025-12-24 14:21:44,851 - filters.data_fill_filter - INFO - Processing binancecoin - BNB
+2025-12-24 14:21:53,655 - utils.csv_manager - INFO - Saved 18 historical records for binancecoin
+2025-12-24 14:21:53,655 - filters.data_fill_filter - INFO - Saved 18 records for binancecoin
+2025-12-24 14:21:53,658 - utils.csv_manager - INFO - Saved 1 metrics records for binancecoin
+2025-12-24 14:22:00,659 - filters.data_fill_filter - INFO - Processing ripple - XRP
+2025-12-24 14:22:03,756 - utils.timer - INFO - Complete Crypto Exchange Data Pipeline completed in 26.03 seconds

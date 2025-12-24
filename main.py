@@ -1,6 +1,5 @@
 import logging
 import sys
-import os
 from utils.csv_manager import CSVManager
 from utils.timer import PerformanceTimer
 from filters.symbol_filter import SymbolFilter
@@ -11,32 +10,26 @@ from filters.strategies.daily_update_strategy import DailyUpdateStrategy
 from filters.strategies.symbol_strategy import SymbolStrategy
 
 
-csv_manager = CSVManager()
-fetch_strategy = CryptoCompareStrategy()
+def setup_logging():
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler('crypto_exchange_analyzer.log', encoding='utf-8'),
+            logging.StreamHandler(sys.stdout)
+        ]
+    )
+    return logging.getLogger(__name__)
 
-data_fill_filter = DataFillFilter(csv_manager, fetch_strategy)
 
 class CryptoExchangeProcessor:
-    def __init__(self, fetch_strategy):
-        self.csv_manager = CSVManager()
-
-        self.symbol_filter = SymbolFilter(self.csv_manager, SymbolStrategy())
-        self.date_check_filter = DateCheckFilter(self.csv_manager, DailyUpdateStrategy())
-        self.data_fill_filter = DataFillFilter(self.csv_manager, fetch_strategy)
-
+    def __init__(self, csv_manager, symbol_strategy, date_strategy, fetch_strategy):
+        self.csv_manager = csv_manager
+        self.symbol_filter = SymbolFilter(csv_manager, symbol_strategy)
+        self.date_check_filter = DateCheckFilter(csv_manager, date_strategy)
+        self.data_fill_filter = DataFillFilter(csv_manager, fetch_strategy)
         self.timer = PerformanceTimer()
-        self.logger = self._setup_logging()
-
-    def _setup_logging(self):
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.FileHandler('crypto_exchange_analyzer.log', encoding='utf-8'),
-                logging.StreamHandler(sys.stdout)
-            ]
-        )
-        return logging.getLogger(__name__)
+        self.logger = logging.getLogger(__name__)
 
     def run_pipe_and_filter(self):
         """Main Pipe and Filter Architecture Implementation"""
@@ -45,20 +38,20 @@ class CryptoExchangeProcessor:
         try:
             with self.timer.measure_time("Complete Crypto Exchange Data Pipeline"):
                 # FILTER 1: Get top cryptocurrencies
-                self.logger.info(" FILTER 1: Downloading and validating cryptocurrency symbols")
+                self.logger.info("FILTER 1: Downloading and validating cryptocurrency symbols")
                 symbols = self.symbol_filter.process()
-                self.logger.info(f" FILTER 1 COMPLETED: {len(symbols)} valid symbols retrieved")
+                self.logger.info(f"FILTER 1 COMPLETED: {len(symbols)} valid symbols retrieved")
 
                 # FILTER 2: Check last date
-                self.logger.info(" FILTER 2: Checking existing data dates and update requirements")
+                self.logger.info("FILTER 2: Checking existing data dates and update requirements")
                 date_info = self.date_check_filter.process(symbols)
                 needs_update = len([c for c in date_info if c['needs_update']])
-                self.logger.info(f" FILTER 2 COMPLETED: {needs_update}/{len(symbols)} require updates")
+                self.logger.info(f"FILTER 2 COMPLETED: {needs_update}/{len(symbols)} require updates")
 
                 # FILTER 3: Fill missing data
-                self.logger.info(" FILTER 3: Downloading and processing missing exchange data")
+                self.logger.info("FILTER 3: Downloading and processing missing exchange data")
                 result = self.data_fill_filter.process(date_info)
-                self.logger.info(f" FILTER 3 COMPLETED: {result['success_count']} successful downloads")
+                self.logger.info(f"FILTER 3 COMPLETED: {result['success_count']} successful downloads")
 
             return self._create_success_result(result, len(symbols))
 
@@ -80,7 +73,6 @@ class CryptoExchangeProcessor:
         return {'status': 'error', 'error': error}
 
     def _calculate_performance_metrics(self, elapsed_time, total_symbols):
-        """Calculate performance metrics for optimization challenge"""
         return {
             'total_seconds': elapsed_time,
             'cryptocurrencies_per_second': total_symbols / elapsed_time if elapsed_time > 0 else 0,
@@ -88,60 +80,68 @@ class CryptoExchangeProcessor:
         }
 
     def display_comprehensive_summary(self):
-        """Display comprehensive summary of data collection"""
         print("\n" + "=" * 70)
-        print(" CRYPTO EXCHANGE ANALYZER - COMPREHENSIVE SUMMARY")
+        print("CRYPTO EXCHANGE ANALYZER - COMPREHENSIVE SUMMARY")
         print("=" * 70)
 
-        # Count files in each directory
-        symbols_count = len([f for f in os.listdir('data/symbols') if f.endswith('.csv')]) if os.path.exists(
-            'data/symbols') else 0
-        historical_count = len([f for f in os.listdir('data/historical') if f.endswith('.csv')]) if os.path.exists(
-            'data/historical') else 0
-        metrics_count = len([f for f in os.listdir('data/metrics') if f.endswith('.csv')]) if os.path.exists(
-            'data/metrics') else 0
+        def count_files(directory):
+            import os
+            return len([f for f in os.listdir(directory) if f.endswith('.csv')]) if os.path.exists(directory) else 0
 
-        print(f" DATA COLLECTION SUMMARY:")
-        print(f"   • Symbol Files: {symbols_count}")
-        print(f"   • Historical Data Files: {historical_count}")
-        print(f"   • Metrics Files: {metrics_count}")
-        print(f"   • Total Data Files: {symbols_count + historical_count + metrics_count}")
+        symbols_count = count_files('data/symbols')
+        historical_count = count_files('data/historical')
+        metrics_count = count_files('data/metrics')
 
-        print(f"\n DATA STORAGE LOCATION:")
-        print(f"   • Root Directory: data/")
-        print(f"   • Symbols: data/symbols/")
-        print(f"   • Historical Data: data/historical/")
-        print(f"   • Metrics: data/metrics/")
+        print(f"DATA COLLECTION SUMMARY:")
+        print(f"  • Symbol Files: {symbols_count}")
+        print(f"  • Historical Data Files: {historical_count}")
+        print(f"  • Metrics Files: {metrics_count}")
+        print(f"  • Total Data Files: {symbols_count + historical_count + metrics_count}")
 
-        print(f"\n LOGS AND DOCUMENTATION:")
-        print(f"   • Execution Logs: crypto_exchange_analyzer.log")
+        print(f"\nDATA STORAGE LOCATION:")
+        print(f"  • Root Directory: data/")
+        print(f"  • Symbols: data/symbols/")
+        print(f"  • Historical Data: data/historical/")
+        print(f"  • Metrics: data/metrics/")
 
+        print(f"\nLOGS AND DOCUMENTATION:")
+        print(f"  • Execution Logs: crypto_exchange_analyzer.log")
 
 
 def main():
-    print(" CRYPTO EXCHANGE ANALYZER")
-    print("   Pipe and Filter Architecture Implementation")
-    print("   Homework 1 - Software Design and Architecture")
+    print("CRYPTO EXCHANGE ANALYZER")
+    print("Pipe and Filter Architecture Implementation")
+    print("Homework 1 - Software Design and Architecture")
     print("=" * 60)
 
+    logger = setup_logging()
+
+    # Single instantiation of managers and strategies
+    csv_manager = CSVManager()
+    symbol_strategy = SymbolStrategy()
+    date_strategy = DailyUpdateStrategy()
     fetch_strategy = CryptoCompareStrategy()
-    processor = CryptoExchangeProcessor(fetch_strategy)
+
+    processor = CryptoExchangeProcessor(
+        csv_manager=csv_manager,
+        symbol_strategy=symbol_strategy,
+        date_strategy=date_strategy,
+        fetch_strategy=fetch_strategy
+    )
 
     result = processor.run_pipe_and_filter()
 
     if result['status'] == 'success':
-        print(f"\n SUCCESS: Pipe and Filter Architecture Implemented")
-        print(f"⏱  EXECUTION TIME: {result['elapsed_time']:.2f} seconds")
-        print(f"- CRYPTOCURRENCIES: {result['success_count']}/{result['total_symbols']} processed")
-        print(f"- PERFORMANCE: {result['performance_metrics']['cryptocurrencies_per_second']:.2f} cryptos/second")
-
-        # Display comprehensive summary
+        logger.info(f"SUCCESS: Pipe and Filter Architecture Implemented")
+        logger.info(f"Execution Time: {result['elapsed_time']:.2f} seconds")
+        logger.info(f"Processed: {result['success_count']}/{result['total_symbols']} cryptocurrencies")
         processor.display_comprehensive_summary()
     else:
-        print(f"\n ERROR: {result['error']}")
+        logger.error(f"ERROR: {result['error']}")
 
     print("=" * 60)
     print("Homework 1 - Crypto Exchange Analyzer - COMPLETED")
+
 
 if __name__ == "__main__":
     main()
