@@ -6,14 +6,24 @@ from utils.timer import PerformanceTimer
 from filters.symbol_filter import SymbolFilter
 from filters.date_check_filter import DateCheckFilter
 from filters.data_fill_filter import DataFillFilter
+from filters.strategies.crypto_compare_strategy import CryptoCompareStrategy
+from filters.strategies.daily_update_strategy import DailyUpdateStrategy
+from filters.strategies.symbol_strategy import SymbolStrategy
 
+
+csv_manager = CSVManager()
+fetch_strategy = CryptoCompareStrategy()
+
+data_fill_filter = DataFillFilter(csv_manager, fetch_strategy)
 
 class CryptoExchangeProcessor:
-    def __init__(self):
+    def __init__(self, fetch_strategy):
         self.csv_manager = CSVManager()
-        self.symbol_filter = SymbolFilter(self.csv_manager)
-        self.date_check_filter = DateCheckFilter(self.csv_manager)
-        self.data_fill_filter = DataFillFilter(self.csv_manager)
+
+        self.symbol_filter = SymbolFilter(self.csv_manager, SymbolStrategy())
+        self.date_check_filter = DateCheckFilter(self.csv_manager, DailyUpdateStrategy())
+        self.data_fill_filter = DataFillFilter(self.csv_manager, fetch_strategy)
+
         self.timer = PerformanceTimer()
         self.logger = self._setup_logging()
 
@@ -114,7 +124,9 @@ def main():
     print("   Homework 1 - Software Design and Architecture")
     print("=" * 60)
 
-    processor = CryptoExchangeProcessor()
+    fetch_strategy = CryptoCompareStrategy()
+    processor = CryptoExchangeProcessor(fetch_strategy)
+
     result = processor.run_pipe_and_filter()
 
     if result['status'] == 'success':
@@ -125,15 +137,11 @@ def main():
 
         # Display comprehensive summary
         processor.display_comprehensive_summary()
-
-
-
     else:
         print(f"\n ERROR: {result['error']}")
 
     print("=" * 60)
-    print("Homework 1 - Crypto Exchange Analyzer - COMPLETED ✅")
-
+    print("Homework 1 - Crypto Exchange Analyzer - COMPLETED")
 
 if __name__ == "__main__":
     main()

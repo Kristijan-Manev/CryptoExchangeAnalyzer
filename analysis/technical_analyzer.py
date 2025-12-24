@@ -346,9 +346,9 @@ class TechnicalAnalyzer:
                 # Add RSI consideration
                 if 'RSI' in summary['indicators']:
                     rsi = summary['indicators']['RSI']
-                    if rsi < 30:  # Oversold
+                    if rsi < 30:
                         signal_score += 2
-                    elif rsi > 70:  # Overbought
+                    elif rsi > 70:
                         signal_score -= 2
 
                 rankings.append({

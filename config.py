@@ -11,7 +11,7 @@ HISTORICAL_DIR = os.path.join(DATA_DIR, "historical")
 METRICS_DIR = os.path.join(DATA_DIR, "metrics")
 
 # Application Settings
-MAX_CRYPTOCURRENCIES = 1000  # Start with 100 for testing
+MAX_CRYPTOCURRENCIES = 1000
 HISTORICAL_YEARS = 10
 START_DATE = (datetime.now() - timedelta(days=HISTORICAL_YEARS * 365)).strftime('%Y-%m-%d')
 END_DATE = datetime.now().strftime('%Y-%m-%d')

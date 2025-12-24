@@ -6,7 +6,7 @@ class OnChainSentimentAnalyzer:
         pass
 
     def analyze(self, crypto_id):
-        # Simulated on-chain data (you can later connect to APIs like Glassnode)
+        # Simulated on-chain data
         onchain_metrics = {
             "active_addresses": random.randint(500_000, 1_000_000),
             "transactions": random.randint(200_000, 500_000),
@@ -19,7 +19,6 @@ class OnChainSentimentAnalyzer:
             "mvrv_ratio": round(random.uniform(1.0, 3.0), 2),
         }
 
-        # Dummy social posts or headlines for sentiment analysis
         sample_posts = [
             "Bitcoin price is expected to surge this week as whales accumulate.",
             "Investors are losing confidence in the market.",
@@ -28,7 +27,6 @@ class OnChainSentimentAnalyzer:
             "Institutional investors are showing strong interest again."
         ]
 
-        # Analyze sentiment with TextBlob (can also use VADER or BERT)
         sentiments = [TextBlob(post).sentiment.polarity for post in sample_posts]
         avg_sentiment = sum(sentiments) / len(sentiments)
 

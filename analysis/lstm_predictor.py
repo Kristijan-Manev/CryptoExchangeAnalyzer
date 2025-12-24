@@ -24,13 +24,12 @@ class LSTMPredictor:
         """Train LSTM on OHLCV data and predict future closing prices"""
         df = pd.DataFrame(historical_data)
 
-        # Ensure columns exist and convert to numeric
         for col in ['open', 'high', 'low', 'close', 'volume']:
             df[col] = pd.to_numeric(df[col], errors='coerce')
 
         df = df.dropna(subset=['open', 'high', 'low', 'close', 'volume'])
 
-        # Use all OHLCV as features
+        # Use all OHLCV
         dataset = df[['open', 'high', 'low', 'close', 'volume']].values
         scaled = self.scaler.fit_transform(dataset)
 

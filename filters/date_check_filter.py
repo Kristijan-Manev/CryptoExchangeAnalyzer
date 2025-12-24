@@ -1,10 +1,10 @@
 import logging
-from datetime import datetime
 
 
 class DateCheckFilter:
-    def __init__(self, csv_manager):
+    def __init__(self, csv_manager, date_check_strategy):
         self.csv_manager = csv_manager
+        self.date_check_strategy = date_check_strategy
         self.logger = logging.getLogger(__name__)
 
     def process(self, cryptocurrencies):
@@ -16,18 +16,11 @@ class DateCheckFilter:
         for crypto in cryptocurrencies:
             crypto_id = crypto['id']
 
-            # Check if we have historical data for this crypto
+            # Check historical data for this crypto
             last_date = self.csv_manager.get_last_historical_date(crypto_id)
 
-            if last_date:
-                # Check if we need to update (data is more than 1 day old)
-                last_date_dt = datetime.strptime(last_date, '%Y-%m-%d')
-                current_date = datetime.now()
-
-                needs_update = (current_date - last_date_dt).days > 1
-            else:
-                # No data exists, need full download
-                needs_update = True
+            # Use the strategy
+            needs_update = self.date_check_strategy.needs_update(last_date)
 
             crypto_date_info.append({
                 'crypto': crypto,
@@ -36,7 +29,7 @@ class DateCheckFilter:
             })
 
         # Log statistics
-        needs_update = len([c for c in crypto_date_info if c['needs_update']])
-        self.logger.info(f"Date check completed: {needs_update}/{len(crypto_date_info)} need updates")
+        needs_update_count = len([c for c in crypto_date_info if c['needs_update']])
+        self.logger.info(f"Date check completed: {needs_update_count}/{len(crypto_date_info)} need updates")
 
         return crypto_date_info
