@@ -17143,3 +17143,25 @@ KeyError: 'signal'
 2025-12-24 14:21:53,658 - utils.csv_manager - INFO - Saved 1 metrics records for binancecoin
 2025-12-24 14:22:00,659 - filters.data_fill_filter - INFO - Processing ripple - XRP
 2025-12-24 14:22:03,756 - utils.timer - INFO - Complete Crypto Exchange Data Pipeline completed in 26.03 seconds
+2025-12-24 15:04:57,073 - __main__ - INFO - Starting Crypto Exchange Analyzer - Pipe and Filter Architecture
+2025-12-24 15:04:57,073 - __main__ - INFO - FILTER 1: Downloading and validating cryptocurrency symbols
+2025-12-24 15:04:57,073 - filters.symbol_filter - INFO - Starting symbol filter: Fetching top cryptocurrencies
+2025-12-24 15:04:57,083 - filters.strategies.symbol_strategy - INFO - Fetching cryptocurrency symbols from CoinGecko
+2025-12-24 15:05:03,540 - filters.strategies.symbol_strategy - INFO - Fetched 1000 total symbols from CoinGecko.
+2025-12-24 15:05:03,566 - utils.csv_manager - INFO - Saved 808 records to data\symbols\crypto_symbols_20251224_150503.csv
+2025-12-24 15:05:03,566 - filters.symbol_filter - INFO - Symbol filter completed: Found 808 valid cryptocurrencies
+2025-12-24 15:05:03,567 - __main__ - INFO - FILTER 1 COMPLETED: 808 valid symbols retrieved
+2025-12-24 15:05:03,567 - __main__ - INFO - FILTER 2: Checking existing data dates and update requirements
+2025-12-24 15:05:03,567 - filters.date_check_filter - INFO - Starting date check filter
+2025-12-24 15:05:04,576 - filters.date_check_filter - INFO - Date check completed: 805/808 need updates
+2025-12-24 15:05:04,576 - __main__ - INFO - FILTER 2 COMPLETED: 805/808 require updates
+2025-12-24 15:05:04,576 - __main__ - INFO - FILTER 3: Downloading and processing missing exchange data
+2025-12-24 15:05:04,576 - filters.data_fill_filter - INFO - Starting data fill filter
+2025-12-24 15:05:04,576 - filters.data_fill_filter - INFO - Processing ripple - XRP
+2025-12-24 15:05:13,523 - utils.csv_manager - INFO - Saved 18 records to data\historical\ripple_historical.csv
+2025-12-24 15:05:13,523 - filters.data_fill_filter - INFO - Saved 18 records for ripple
+2025-12-24 15:05:13,526 - utils.csv_manager - INFO - Saved 1 records to data\metrics\ripple_metrics.csv
+2025-12-24 15:05:20,526 - filters.data_fill_filter - INFO - Processing solana - Solana
+2025-12-24 15:05:30,627 - utils.csv_manager - INFO - Saved 18 records to data\historical\solana_historical.csv
+2025-12-24 15:05:30,627 - filters.data_fill_filter - INFO - Saved 18 records for solana
+2025-12-24 15:05:30,629 - utils.csv_manager - INFO - Saved 1 records to data\metrics\solana_metrics.csv
