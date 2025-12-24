@@ -4,13 +4,13 @@ from config import RATE_LIMIT_DELAY
 
 
 class DataFillFilter:
-    def __init__(self, csv_manager, fetch_strategy):
+    def __init__(self, csv_manager, data_fetch_strategy):
         """
         :param csv_manager: object responsible for saving data
-        :param fetch_strategy: instance of a class implementing DataFetchStrategy
+        :param data_fetch_strategy: instance of a class implementing DataFetchStrategy
         """
         self.csv_manager = csv_manager
-        self.fetch_strategy = fetch_strategy  # the Strategy pattern here
+        self.fetch_strategy = data_fetch_strategy  # the Strategy pattern here
         self.logger = logging.getLogger(__name__)
 
     def process(self, crypto_date_info):
