@@ -1,4 +1,7 @@
-class TechnicalAnalysisStrategy:
+from analysis.strategies.base import AnalysisStrategy
+
+
+class TechnicalAnalysisStrategy(AnalysisStrategy):
     """Strategy for performing technical analysis on a cryptocurrency"""
     def __init__(self, analyzer, data_provider, logger):
         self.analyzer = analyzer            # Your TechnicalAnalyzer instance
