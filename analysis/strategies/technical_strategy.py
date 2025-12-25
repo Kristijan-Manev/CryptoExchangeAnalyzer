@@ -4,8 +4,8 @@ from analysis.strategies.base import AnalysisStrategy
 class TechnicalAnalysisStrategy(AnalysisStrategy):
     """Strategy for performing technical analysis on a cryptocurrency"""
     def __init__(self, analyzer, data_provider, logger):
-        self.analyzer = analyzer            # Your TechnicalAnalyzer instance
-        self.data_provider = data_provider  # CryptoExchangeProcessor for _get_crypto_historical_data and _get_indicators_summary
+        self.analyzer = analyzer
+        self.data_provider = data_provider
         self.logger = logger
 
     def analyze(self, crypto_id, time_frame='daily'):

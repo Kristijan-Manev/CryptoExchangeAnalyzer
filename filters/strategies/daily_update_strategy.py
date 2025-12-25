@@ -2,6 +2,7 @@ from datetime import datetime
 import logging
 from filters.strategies.date_check_strategy import DateCheckStrategy
 
+
 class DailyUpdateStrategy(DateCheckStrategy):
     """Concrete strategy for checking if crypto data needs daily updates"""
 

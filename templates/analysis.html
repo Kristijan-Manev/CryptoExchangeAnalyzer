@@ -239,239 +239,240 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <a href="/" class="back-button">← Back to Search</a>
-            <div>
-                <div class="crypto-header">
-                    <div class="crypto-symbol" id="cryptoSymbol">...</div>
-                    <div class="crypto-name" id="cryptoName">...</div>
-                </div>
-                <div id="cryptoPrice" style="font-size: 1.2em; opacity: 0.9;"></div>
+<div class="container">
+    <div class="header">
+        <a href="/" class="back-button">← Back to Search</a>
+        <div>
+            <div class="crypto-header">
+                <div class="crypto-symbol" id="cryptoSymbol">...</div>
+                <div class="crypto-name" id="cryptoName">...</div>
             </div>
-        </div>
-
-        <div class="content">
-            <div id="loading" class="loading">
-                ⏳ Loading technical analysis data...
-            </div>
-
-            <div id="error" class="error hidden"></div>
-
-            <div id="content" class="hidden">
-                <!-- Current Signal -->
-                <div class="data-section">
-                    <h3 class="section-title"> Current Analysis</h3>
-                    <div id="currentSignal" style="padding: 20px; background: #f4f9ff; border-radius: 10px; margin-bottom: 20px;"></div>
-                </div>
-
-                <!-- Timeframe Tabs -->
-                <div class="timeframe-tabs">
-                    <button class="timeframe-tab active" onclick="switchTimeFrame('daily')">Daily Analysis</button>
-                    <button class="timeframe-tab" onclick="switchTimeFrame('weekly')">Weekly Analysis</button>
-                    <button class="timeframe-tab" onclick="switchTimeFrame('monthly')">Monthly Analysis</button>
-                </div>
-
-                <!-- Stats -->
-                <div class="stats-grid" id="analysisStats"></div>
-
-                <!-- Indicators Summary -->
-                <div class="data-section">
-                    <h3 class="section-title"> Technical Indicators</h3>
-                    <div id="indicatorsGrid" class="indicator-grid"></div>
-                </div>
-
-                <!-- Analysis Data Table -->
-                <div class="data-section">
-                    <h3 class="section-title"> Analysis Data</h3>
-                    <div id="analysisTable"></div>
-                </div>
-            </div>
+            <div id="cryptoPrice" style="font-size: 1.2em; opacity: 0.9;"></div>
         </div>
     </div>
 
-    <script>
-        const cryptoId = '{{ crypto_id }}';
-        let currentTimeFrame = 'daily';
-        let analysisData = {};
+    <div class="content">
+        <div id="loading" class="loading">
+            ⏳ Loading technical analysis data...
+        </div>
 
-        async function loadAnalysis() {
-            try {
-                const response = await fetch(`/api/analysis/${cryptoId}`);
-                const data = await response.json();
+        <div id="error" class="error hidden"></div>
 
-                if (data.error) {
-                    showError(data.error);
-                    return;
-                }
+        <div id="content" class="hidden">
+            <!-- Current Signal -->
+            <div class="data-section">
+                <h3 class="section-title"> Current Analysis</h3>
+                <div id="currentSignal"
+                     style="padding: 20px; background: #f4f9ff; border-radius: 10px; margin-bottom: 20px;"></div>
+            </div>
 
-                analysisData = data;
-                displayAnalysis('daily');
+            <!-- Timeframe Tabs -->
+            <div class="timeframe-tabs">
+                <button class="timeframe-tab active" onclick="switchTimeFrame('daily')">Daily Analysis</button>
+                <button class="timeframe-tab" onclick="switchTimeFrame('weekly')">Weekly Analysis</button>
+                <button class="timeframe-tab" onclick="switchTimeFrame('monthly')">Monthly Analysis</button>
+            </div>
 
-                document.getElementById('loading').classList.add('hidden');
-                document.getElementById('content').classList.remove('hidden');
+            <!-- Stats -->
+            <div class="stats-grid" id="analysisStats"></div>
 
-            } catch (err) {
-                showError('Error loading analysis: ' + err.message);
-            }
-        }
+            <!-- Indicators Summary -->
+            <div class="data-section">
+                <h3 class="section-title"> Technical Indicators</h3>
+                <div id="indicatorsGrid" class="indicator-grid"></div>
+            </div>
 
-        function switchTimeFrame(timeFrame) {
-            currentTimeFrame = timeFrame;
+            <!-- Analysis Data Table -->
+            <div class="data-section">
+                <h3 class="section-title"> Analysis Data</h3>
+                <div id="analysisTable"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-            // Update active tab
-            document.querySelectorAll('.timeframe-tab').forEach(tab => {
-                tab.classList.remove('active');
-                if (tab.textContent.toLowerCase().includes(timeFrame)) {
-                    tab.classList.add('active');
-                }
-            });
+<script>
+    const cryptoId = '{{ crypto_id }}';
+    let currentTimeFrame = 'daily';
+    let analysisData = {};
 
-            displayAnalysis(timeFrame);
-        }
+    async function loadAnalysis() {
+        try {
+            const response = await fetch(`/api/analysis/${cryptoId}`);
+            const data = await response.json();
 
-        function displayAnalysis(timeFrame) {
-            const analysis = analysisData[`${timeFrame}_analysis`];
-            const cryptoInfo = analysisData.crypto_info;
-
-            if (!analysis) {
-                showError(`No ${timeFrame} analysis available. Make sure you have enough historical data.`);
+            if (data.error) {
+                showError(data.error);
                 return;
             }
 
-            // Display crypto info
-            document.getElementById('cryptoSymbol').textContent = cryptoInfo.symbol || cryptoId;
-            document.getElementById('cryptoName').textContent = cryptoInfo.name || cryptoId;
+            analysisData = data;
+            displayAnalysis('daily');
 
-            if (cryptoInfo.current_price) {
-                document.getElementById('cryptoPrice').textContent =
-                    `Current Price: $${cryptoInfo.current_price.toLocaleString()}`;
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('content').classList.remove('hidden');
+
+        } catch (err) {
+            showError('Error loading analysis: ' + err.message);
+        }
+    }
+
+    function switchTimeFrame(timeFrame) {
+        currentTimeFrame = timeFrame;
+
+        // Update active tab
+        document.querySelectorAll('.timeframe-tab').forEach(tab => {
+            tab.classList.remove('active');
+            if (tab.textContent.toLowerCase().includes(timeFrame)) {
+                tab.classList.add('active');
             }
+        });
 
-            // Display current signal
-            const summary = analysis.summary;
-            const signalClass = `signal-${summary.latest_signal.toLowerCase()}`;
+        displayAnalysis(timeFrame);
+    }
 
-            document.getElementById('currentSignal').innerHTML = `
-                <div style="text-align: center;">
-                    <h3>Current Signal: <span class="${signalClass}">${summary.latest_signal}</span></h3>
-                    <p>Signal Strength: ${summary.latest_signal_strength}/5</p>
-                    <p>Based on ${summary.buy_signals} buy signals, ${summary.sell_signals} sell signals, ${summary.hold_signals} hold signals</p>
-                    <p>Time Frame: ${timeFrame.charAt(0).toUpperCase() + timeFrame.slice(1)}</p>
-                </div>
-            `;
+    function displayAnalysis(timeFrame) {
+        const analysis = analysisData[`${timeFrame}_analysis`];
+        const cryptoInfo = analysisData.crypto_info;
 
-            // Display analysis stats
-            document.getElementById('analysisStats').innerHTML = `
-                <div class="stat-card">
-                    <div class="stat-value">${analysis.data_points}</div>
-                    <div class="stat-label">Data Points</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">${summary.buy_signals}</div>
-                    <div class="stat-label">Buy Signals</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">${summary.sell_signals}</div>
-                    <div class="stat-label">Sell Signals</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value">10</div>
-                    <div class="stat-label">Indicators</div>
-                </div>
-            `;
-
-            // Display indicators
-            displayIndicators(analysis.indicators_summary);
-
-            // Display analysis table
-            displayAnalysisTable(analysis.analysis_data);
+        if (!analysis) {
+            showError(`No ${timeFrame} analysis available. Make sure you have enough historical data.`);
+            return;
         }
 
-        function displayIndicators(indicators) {
-            const grid = document.getElementById('indicatorsGrid');
+        // Display crypto info
+        document.getElementById('cryptoSymbol').textContent = cryptoInfo.symbol || cryptoId;
+        document.getElementById('cryptoName').textContent = cryptoInfo.name || cryptoId;
 
-            if (!indicators || Object.keys(indicators).length === 0) {
-                grid.innerHTML = '<div class="no-data">No indicator data available</div>';
-                return;
-            }
-
-            let html = '';
-
-            for (const [name, data] of Object.entries(indicators)) {
-                html += `
-                    <div class="indicator-card">
-                        <h4>${name}</h4>
-                        <p><strong>Value:</strong> ${data.value}</p>
-                        <p><strong>Interpretation:</strong> ${data.interpretation}</p>
-                    </div>
-                `;
-            }
-
-            grid.innerHTML = html;
+        if (cryptoInfo.current_price) {
+            document.getElementById('cryptoPrice').textContent =
+                `Current Price: $${cryptoInfo.current_price.toLocaleString()}`;
         }
 
-        function displayAnalysisTable(data) {
-            const tableContainer = document.getElementById('analysisTable');
+        // Display current signal
+        const summary = analysis.summary;
+        const signalClass = `signal-${summary.latest_signal.toLowerCase()}`;
 
-            if (!data || data.length === 0) {
-                tableContainer.innerHTML = '<div class="no-data">No analysis data available</div>';
-                return;
-            }
+        document.getElementById('currentSignal').innerHTML = `
+            <div style="text-align: center;">
+                <h3>Current Signal: <span class="${signalClass}">${summary.latest_signal}</span></h3>
+                <p>Signal Strength: ${summary.latest_signal_strength}/5</p>
+                <p>Based on ${summary.buy_signals} buy signals, ${summary.sell_signals} sell signals, ${summary.hold_signals} hold signals</p>
+                <p>Time Frame: ${timeFrame.charAt(0).toUpperCase() + timeFrame.slice(1)}</p>
+            </div>
+        `;
 
-            let html = `
-                <p>Showing last ${Math.min(data.length, 20)} of ${data.length} data points</p>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Close</th>
-                            <th>RSI</th>
-                            <th>MACD</th>
-                            <th>Signal</th>
-                            <th>BB Position</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+        // Display analysis stats
+        document.getElementById('analysisStats').innerHTML = `
+            <div class="stat-card">
+                <div class="stat-value">${analysis.data_points}</div>
+                <div class="stat-label">Data Points</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${summary.buy_signals}</div>
+                <div class="stat-label">Buy Signals</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">${summary.sell_signals}</div>
+                <div class="stat-label">Sell Signals</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">10</div>
+                <div class="stat-label">Indicators</div>
+            </div>
+        `;
+
+        // Display indicators
+        displayIndicators(analysis.indicators_summary);
+
+        // Display analysis table
+        displayAnalysisTable(analysis.analysis_data);
+    }
+
+    function displayIndicators(indicators) {
+        const grid = document.getElementById('indicatorsGrid');
+
+        if (!indicators || Object.keys(indicators).length === 0) {
+            grid.innerHTML = '<div class="no-data">No indicator data available</div>';
+            return;
+        }
+
+        let html = '';
+
+        for (const [name, data] of Object.entries(indicators)) {
+            html += `
+                <div class="indicator-card">
+                    <h4>${name}</h4>
+                    <p><strong>Value:</strong> ${data.value}</p>
+                    <p><strong>Interpretation:</strong> ${data.interpretation}</p>
+                </div>
             `;
+        }
 
-            // Show last 20 records
-            const displayData = data.slice(-20).reverse();
+        grid.innerHTML = html;
+    }
 
-            displayData.forEach(row => {
-                const bbPosition = row.BB_upper && row.BB_lower ?
-                    (row.close > row.BB_upper ? 'Above' :
-                     row.close < row.BB_lower ? 'Below' : 'Within') : 'N/A';
+    function displayAnalysisTable(data) {
+        const tableContainer = document.getElementById('analysisTable');
 
-                const signalClass = `signal-${(row.signal || 'hold').toLowerCase()}`;
+        if (!data || data.length === 0) {
+            tableContainer.innerHTML = '<div class="no-data">No analysis data available</div>';
+            return;
+        }
 
-                html += `
+        let html = `
+            <p>Showing last ${Math.min(data.length, 20)} of ${data.length} data points</p>
+            <table class="data-table">
+                <thead>
                     <tr>
-                        <td>${row.date || 'N/A'}</td>
-                        <td>${row.close?.toFixed(2) || 'N/A'}</td>
-                        <td>${row.RSI?.toFixed(2) || 'N/A'}</td>
-                        <td>${row.MACD?.toFixed(4) || 'N/A'}</td>
-                        <td><span class="${signalClass}">${row.signal || 'HOLD'}</span></td>
-                        <td>${bbPosition}</td>
+                        <th>Date</th>
+                        <th>Close</th>
+                        <th>RSI</th>
+                        <th>MACD</th>
+                        <th>Signal</th>
+                        <th>BB Position</th>
                     </tr>
-                `;
-            });
+                </thead>
+                <tbody>
+        `;
 
-            html += '</tbody></table>';
-            tableContainer.innerHTML = html;
-        }
+        // Show last 20 records
+        const displayData = data.slice(-20).reverse();
 
-        function showError(message) {
-            const loading = document.getElementById('loading');
-            const error = document.getElementById('error');
+        displayData.forEach(row => {
+            const bbPosition = row.BB_upper && row.BB_lower ?
+                (row.close > row.BB_upper ? 'Above' :
+                 row.close < row.BB_lower ? 'Below' : 'Within') : 'N/A';
 
-            loading.classList.add('hidden');
-            error.textContent = message;
-            error.classList.remove('hidden');
-        }
+            const signalClass = `signal-${(row.signal || 'hold').toLowerCase()}`;
 
-        // Load analysis when page opens
-        document.addEventListener('DOMContentLoaded', loadAnalysis);
-    </script>
+            html += `
+                <tr>
+                    <td>${row.date || 'N/A'}</td>
+                    <td>${row.close?.toFixed(2) || 'N/A'}</td>
+                    <td>${row.RSI?.toFixed(2) || 'N/A'}</td>
+                    <td>${row.MACD?.toFixed(4) || 'N/A'}</td>
+                    <td><span class="${signalClass}">${row.signal || 'HOLD'}</span></td>
+                    <td>${bbPosition}</td>
+                </tr>
+            `;
+        });
+
+        html += '</tbody></table>';
+        tableContainer.innerHTML = html;
+    }
+
+    function showError(message) {
+        const loading = document.getElementById('loading');
+        const error = document.getElementById('error');
+
+        loading.classList.add('hidden');
+        error.textContent = message;
+        error.classList.remove('hidden');
+    }
+
+    // Load analysis when page opens
+    document.addEventListener('DOMContentLoaded', loadAnalysis);
+</script>
 </body>
 </html>

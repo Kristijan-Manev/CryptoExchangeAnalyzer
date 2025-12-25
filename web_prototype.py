@@ -26,9 +26,11 @@ from analysis.onchain_sentiment_analyzer import OnChainSentimentAnalyzer
 
 try:
     from analysis.strategies.technical_strategy import TechnicalAnalysisStrategy
+
     TECHNICAL_ANALYSIS_AVAILABLE = True
 
     from analysis.strategies.lstm_strategy import LSTMAnalysisStrategy
+
     LSTM_AVAILABLE = True
 
     ONCHAIN_AVAILABLE = True
@@ -39,6 +41,7 @@ except ImportError:
     TECHNICAL_ANALYSIS_AVAILABLE = False
     ONCHAIN_AVAILABLE = False
     sentiment_analyzer = None
+
 
 class CryptoExchangeProcessor:
     """Processor implementing Strategy Design Pattern for filters and analyses"""
@@ -119,8 +122,7 @@ class CryptoExchangeProcessor:
             'processed_count': result['processed_count'],
             'success_count': result['success_count'],
             'performance_metrics': self._calculate_performance_metrics(elapsed, total_symbols)
-            }
-
+        }
 
     def _create_error_result(self, error):
         return {'status': 'error', 'error': error}
@@ -132,55 +134,6 @@ class CryptoExchangeProcessor:
             'cryptocurrencies_per_second': total_symbols / elapsed_time if elapsed_time > 0 else 0,
             'efficiency_score': (total_symbols / elapsed_time) * 1000 if elapsed_time > 0 else 0
         }
-
-    # def search_crypto_data(self, search_term):
-    #     """Search for cryptocurrency data by symbol or name"""
-    #     try:
-    #         # Load all symbols
-    #         symbols = self.csv_manager.load_symbols()
-    #
-    #         # Search for matching cryptocurrencies (case-insensitive)
-    #         search_term_lower = search_term.lower()
-    #         matches = []
-    #
-    #         for crypto in symbols:
-    #             if (search_term_lower in crypto['symbol'].lower() or
-    #                     search_term_lower in crypto['name'].lower() or
-    #                     search_term_lower in crypto['id'].lower()):
-    #
-    #                 # Get historical data
-    #                 historical_data = self._get_crypto_historical_data(crypto['id'])
-    #
-    #                 # Get metrics data
-    #                 metrics_data = self._get_crypto_metrics_data(crypto['id'])
-    #
-    #                 # Clean the crypto info data as well
-    #                 cleaned_crypto = {}
-    #                 for key, value in crypto.items():
-    #                     if value is None or (isinstance(value, float) and math.isnan(value)):
-    #                         cleaned_crypto[key] = None
-    #                     else:
-    #                         cleaned_crypto[key] = value
-    #
-    #                 matches.append({
-    #                     'symbol_info': cleaned_crypto,
-    #                     'historical_data': historical_data,
-    #                     'metrics_data': metrics_data
-    #                 })
-    #
-    #         return matches
-    #
-    #     except Exception as e:
-    #         self.logger.error(f"Error searching crypto data: {e}")
-    #         return []
-
-    # ---------------- Data Access ----------------
-    # def get_all_cryptocurrencies(self):
-    #     try:
-    #         return self.csv_manager.load_symbols()
-    #     except Exception as e:
-    #         self.logger.error(f"Error loading all cryptocurrencies: {e}")
-    #         return []
 
     def _get_crypto_historical_data(self, crypto_id):
         """Get historical data for a specific cryptocurrency"""
@@ -268,71 +221,6 @@ class CryptoExchangeProcessor:
             return str(obj)
         else:
             return obj
-
-    def perform_technical_analysis(self, crypto_id, time_frame='daily'):
-        """Perform technical analysis for a cryptocurrency"""
-        if not TECHNICAL_ANALYSIS_AVAILABLE or not self.technical_analyzer:
-            return None
-
-        try:
-            # Get historical data
-            historical_data = self._get_crypto_historical_data(crypto_id)
-
-            if not historical_data or len(historical_data) < 50:
-                self.logger.warning(f"Insufficient data for technical analysis of {crypto_id}")
-                return None
-
-            # Perform analysis
-            import pandas as pd
-            df = pd.DataFrame(historical_data)
-
-            # Ensure we have required columns
-            required_cols = ['date', 'open', 'high', 'low', 'close']
-            for col in required_cols:
-                if col not in df.columns:
-                    self.logger.error(f"Missing required column {col} for {crypto_id}")
-                    return None
-
-            # Drop rows with all zero prices
-            df = df[(df[['open', 'high', 'low', 'close']] != 0).any(axis=1)]
-
-            # Drop NaN values if any
-            df = df.dropna(subset=['open', 'high', 'low', 'close'])
-
-            analysis_df = self.technical_analyzer.calculate_indicators(
-                df, time_frame
-            )
-
-            if analysis_df is None or analysis_df.empty:
-                self.logger.error(f"Technical analysis failed for {crypto_id}")
-                return None
-
-            # Get summary
-            summary = self.technical_analyzer.get_analysis_summary(analysis_df)
-
-            # Convert DataFrame to dict for JSON response
-            analysis_dict = analysis_df.to_dict('records')
-
-            # Get indicators summary
-            indicators_summary = self._get_indicators_summary(analysis_df)
-
-            analysis_result = {
-                'crypto_id': crypto_id,
-                'time_frame': time_frame,
-                'data_points': len(analysis_dict),
-                'analysis_data': analysis_dict[-100:],  # Last 100 points
-                'summary': summary,
-                'indicators_summary': indicators_summary
-            }
-
-            # Convert numpy types to Python types
-            return self._convert_numpy_types(analysis_result)
-
-        except Exception as e:
-            self.logger.error(f"Error in technical analysis for {crypto_id}: {e}")
-            import traceback
-            self.logger.error(traceback.format_exc())
-            return None
 
     # ---------------- Search ----------------
     def search_crypto_data(self, search_term):
@@ -666,6 +554,7 @@ def get_top_cryptos_analysis(top_n):
     except Exception as e:
         return jsonify({'error': f'Top analysis error: {str(e)}'})
 
+
 @app.route('/api/cryptos')
 def get_all_cryptos():
     """API endpoint to get all cryptocurrencies (for debugging)"""
@@ -709,6 +598,7 @@ def lstm_predict(crypto_id):
     except Exception as e:
         return jsonify({'error': str(e)})
 
+
 @app.route('/api/onchain_sentiment/<crypto_id>')
 def onchain_sentiment(crypto_id):
     if not ONCHAIN_AVAILABLE:
@@ -718,6 +608,7 @@ def onchain_sentiment(crypto_id):
         return jsonify(processor._convert_numpy_types(result))
     except Exception as e:
         return jsonify({'error': str(e)})
+
 
 def display_startup_banner():
     """Display startup information"""

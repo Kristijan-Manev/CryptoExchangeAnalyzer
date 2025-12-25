@@ -2,14 +2,17 @@ import time
 import logging
 from contextlib import contextmanager
 
+
 # Strategy for logging
 class LoggerStrategy:
     def log(self, message: str):
         raise NotImplementedError
 
+
 class ConsoleLogger(LoggerStrategy):
     def log(self, message: str):
         print(message)
+
 
 class FileLogger(LoggerStrategy):
     def __init__(self, filename="performance.log"):
@@ -22,6 +25,7 @@ class FileLogger(LoggerStrategy):
 
     def log(self, message: str):
         self.logger.info(message)
+
 
 # Singleton PerformanceTimer
 class PerformanceTimer:
@@ -43,6 +47,7 @@ class PerformanceTimer:
         finally:
             elapsed_time = time.time() - start_time
             self.logger_strategy.log(f"{operation_name} completed in {elapsed_time:.2f} seconds")
+
 
 # Example usage:
 if __name__ == "__main__":

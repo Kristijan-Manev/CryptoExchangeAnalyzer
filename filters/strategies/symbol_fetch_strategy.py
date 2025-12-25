@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class SymbolFetchStrategy(ABC):
     """Interface for fetching cryptocurrency symbol data."""
 

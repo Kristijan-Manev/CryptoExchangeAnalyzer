@@ -1,4 +1,3 @@
-# crypto_compare_strategy.py
 import requests
 import logging
 import time

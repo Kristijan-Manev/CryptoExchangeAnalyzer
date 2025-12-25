@@ -1,6 +1,7 @@
 import logging
 from config import MAX_CRYPTOCURRENCIES
 
+
 class SymbolFilter:
     def __init__(self, csv_manager, symbol_fetch_strategy):
         self.csv_manager = csv_manager

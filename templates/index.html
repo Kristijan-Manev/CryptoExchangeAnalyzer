@@ -289,45 +289,45 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1> Crypto Exchange Analyzer</h1>
-            <p>Technical Prototype - Search Cryptocurrency Data</p>
-        </div>
+<div class="container">
+    <div class="header">
+        <h1> Crypto Exchange Analyzer</h1>
+        <p>Technical Prototype - Search Cryptocurrency Data</p>
+    </div>
 
-        <div class="stats-bar" id="statsBar">
-            Loading cryptocurrency data...
-        </div>
+    <div class="stats-bar" id="statsBar">
+        Loading cryptocurrency data...
+    </div>
 
-        <div class="search-section">
-            <div class="search-box">
-                <input type="text"
-                       id="searchInput"
-                       class="search-input"
-                       placeholder="Enter cryptocurrency symbol or name (e.g., BTC, Bitcoin, ethereum)..."
-                       onkeypress="handleKeyPress(event)">
-                <button id="searchButton" class="search-button" onclick="searchCrypto()">
-                    SEARCH
-                </button>
-            </div>
-        </div>
-
-        <div class="results-section">
-            <div id="loading" class="loading hidden">
-                 Searching cryptocurrency data...
-            </div>
-
-            <div id="error" class="error hidden"></div>
-
-            <div id="resultsContainer">
-                <div class="no-results">
-                     Enter a cryptocurrency symbol or name above to search
-                </div>
-            </div>
+    <div class="search-section">
+        <div class="search-box">
+            <input type="text"
+                   id="searchInput"
+                   class="search-input"
+                   placeholder="Enter cryptocurrency symbol or name (e.g., BTC, Bitcoin, ethereum)..."
+                   onkeypress="handleKeyPress(event)">
+            <button id="searchButton" class="search-button" onclick="searchCrypto()">
+                SEARCH
+            </button>
         </div>
     </div>
 
-    <script>
+    <div class="results-section">
+        <div id="loading" class="loading hidden">
+            Searching cryptocurrency data...
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+        <div id="resultsContainer">
+            <div class="no-results">
+                Enter a cryptocurrency symbol or name above to search
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
     // Load stats on page load
     document.addEventListener('DOMContentLoaded', function() {
         loadStats();
