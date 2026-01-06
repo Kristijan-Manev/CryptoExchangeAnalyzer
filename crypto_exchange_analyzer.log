@@ -17165,3 +17165,23 @@ KeyError: 'signal'
 2025-12-24 15:05:30,627 - utils.csv_manager - INFO - Saved 18 records to data\historical\solana_historical.csv
 2025-12-24 15:05:30,627 - filters.data_fill_filter - INFO - Saved 18 records for solana
 2025-12-24 15:05:30,629 - utils.csv_manager - INFO - Saved 1 records to data\metrics\solana_metrics.csv
+2026-01-05 22:26:21,669 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+2026-01-05 22:26:21,669 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-05 22:26:21,674 - werkzeug - INFO -  * Restarting with stat
+2026-01-05 22:26:24,774 - werkzeug - WARNING -  * Debugger is active!
+2026-01-05 22:26:24,776 - werkzeug - INFO -  * Debugger PIN: 757-393-419
+2026-01-05 22:26:26,929 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:26] "GET / HTTP/1.1" 200 -
+2026-01-05 22:26:27,009 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:27] "GET /status HTTP/1.1" 200 -
+2026-01-05 22:26:27,174 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:27] "GET /status HTTP/1.1" 200 -
+2026-01-05 22:26:27,360 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-05 22:26:30,400 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:30] "POST /search HTTP/1.1" 200 -
+2026-01-05 22:26:32,589 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:32] "GET /crypto/ethereum-classic HTTP/1.1" 200 -
+2026-01-05 22:26:32,964 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:32] "GET /api/crypto/ethereum-classic HTTP/1.1" 200 -
+2026-01-05 22:26:37,986 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:26:37] "GET /api/onchain_sentiment/ethereum-classic HTTP/1.1" 200 -
+2026-01-05 22:27:30,483 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:27:30] "GET /api/predict/ethereum-classic HTTP/1.1" 200 -
+2026-01-05 22:28:20,181 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:28:20] "POST /search HTTP/1.1" 200 -
+2026-01-05 22:28:21,513 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:28:21] "GET /analysis/ethereum-classic HTTP/1.1" 200 -
+2026-01-05 22:28:36,494 - werkzeug - INFO - 127.0.0.1 - - [05/Jan/2026 22:28:36] "GET /api/analysis/ethereum-classic HTTP/1.1" 200 -
